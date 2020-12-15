@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is a To do list web app created by mpcwholeworld.com you can manage your task hare. auto time and date detecting features">
+  <meta name="keywords" content="to do list
+  to do google,
+  to do download,
+  to do app,
+  to do list online,
+  to do list app,
+  to do list app for windows,
+  free to do list,
+  to-do google,
+ticktick google play,
+planner for android,
+microsoft to-do review,
+planner in teams mobile,
+google keep free download,
+to-do list google,
+to do list template,
+todoist download,
+to-do list examples,
+to-do list meaning,
+todoist login,
+best to-do list app for iphone,
+microsoft to do teams,
+microsoft to-do vs todoist,
+microsoft todos mac,
+any.do desktop app,
+any.do vs todoist,
+any do whatsapp,
+any do premium,
+simple to-do,
+any.do premium apk,
+what is wunderlist,
+wunderlist update,
+wunderlist without microsoft account,
+todoist windows,
+wunderlist apk,
+priority list examples,
+daily to-do list examples,
+benefits of a to-do list,
+things to put on a to-do list,,
+work priorities examples,
+effective to-do list techniques,
+best free to-do list app,
+todoist vs microsoft to-do,
+toodledo vs todoist,
+wunderlist,
+google tasks app,
+to-do list,
+
+to-do google,
+
+to do download,
+
+to do app
+,
+to do list online,
+
+to-do list app,
+
+to-do list app for windows,
+
+free to do list,
+
+  ">
+  <title>To Do list by mpcwholeworld.com</title>
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+  <link rel="stylesheet" href="todo.css">
+  <script src="todo.js"></script>
+
+
+</head>
+
+<body>
+  <div class="health">
+    <div class="todo">
+      <h1>To <span>Do</span></h1>
+    </div>
+
+    <form class="add-items">
+      <input type="text" class="form-control" id="todo-list-item" placeholder="Your Task..">
+      <button class="add" type="submit">Add</button>
+    </form>
+    <ul id="list-items"></ul> <br><br><br>
+  </div>
+  <div class="date-and-time">
+    <div class="date">
+      <! for Date>
+        <p>Date: <span id="datetime"></span></p>
+        <script>
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML = ((("0" + dt.getDate()).slice(-2)) + "-" +
+            ("0" + (dt.getMonth() + 1)).slice(-2)) + "-" + (dt.getFullYear());
+        </script>
+    </div>
+
+    <! for time>
+      <div class="time">
+        <p id="DigitalCLOCK" class="clock" onload="showTime()"></p>
+        <script>
+
+          function showTime() {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = "AM";
+
+            if (h == 0) {
+              h = 12;
+            }
+
+            if (h > 12) {
+              h = h - 12;
+              session = "PM";
+            }
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("DigitalCLOCK").innerText = time;
+            document.getElementById("DigitalCLOCK").textContent = time;
+
+            setTimeout(showTime, 1000);
+
+          }
+
+          showTime();
+
+        </script>
+
+      </div>
+
+  </div>
+
+</body>
+
+</html>

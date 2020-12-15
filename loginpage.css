@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+}
+
+#loginBackground{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(#ec088da6,blue);
+    position: fixed;
+
+
+}
+
+#loginFormCon{
+    height: 500px;
+    width: 40%;
+   background: blue;
+    position: fixed;
+    left: 30%;
+    margin-top: 50px;
+    border-radius: 10%;
+    box-shadow: 0 10px 10px black ;
+}
+form{
+    text-align: center;
+    margin-top: 60px;
+    
+}
+#userPic{
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   box-shadow: 0 0 5px 1px #828282;
+
+}
+#userEmail{
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 10px black;
+    
+}
+#userPassword{
+    padding: 10px;
+    background:white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 10px black;
+    
+}
+#login{
+    padding: 10px 20px;
+    background:white;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 1px 10px black;
+    cursor: pointer;
+    
+}
+#login:hover{
+    background: blue;
+}
+
+#SignUp{
+    padding: 10px 20px;
+    background:white;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 1px 10px black;
+    cursor: pointer;
+    font-weight: lighter;
+    
+}
+#SignUp:hover{
+    background: blue;
+}
+
+/*style for sign up...*/
+#signUpCon{
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    background: linear-gradient(#0000ff88,#ec088d);
+    position: fixed;
+    transition: .5s;
+    
+}
+#sighUpForm{
+    height: 500px;
+    width: 40%;
+   background: blue;
+    position: fixed;
+    left: 30%;
+    margin-top: 50px;
+    border-radius: 10%;
+    box-shadow: 0 10px 10px black ;
+
+}
+#name{
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 10px black;
+    
+}
+#mobile{
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 10px black;
+    
+}
+
+@media only screen and (max-width:700px) {
+    #loginFormCon{
+        height: 500px;
+        width: 80%;
+       background: blue;
+        position: fixed;
+        left: 10%;
+        margin-top: 50px;
+        border-radius: 10%;
+        box-shadow: 0 10px 10px black ;
+    }
+    #sighUpForm{
+    height: 500px;
+    width: 80%;
+   background: blue;
+    position: fixed;
+    left: 10%;
+    margin-top: 50px;
+    border-radius: 10%;
+    box-shadow: 0 10px 10px black ;
+
+}
+    
+}

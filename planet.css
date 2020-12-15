@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://cdn.pixabay.com/photo/2016/03/09/15/18/stars-1246590_960_720.jpg");
+  overflow: hidden;
+}
+#container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: roundRound infinite 40s linear;
+}
+@keyframes roundRound {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+#container span {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(600px);
+  border-radius: 20px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: relative;
+  left: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 2s;
+}
+
+#containerForBtn {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#btn {
+  bottom: 0;
+  cursor: pointer;
+  margin-left: 10px;
+  background: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#btn:hover {
+  transform: scale(1.1);
+}
+
+#earthContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+  
+  
+}
+
+#earthContainer h2{
+          font-weight: lighter;
+          font-size: 20px;
+          margin-left: 50px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+          color: white;
+          
+}
+span{
+          color: rgb(20, 255, 224);
+          font-size: 30px;
+}
+#earthContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+
+#mercuryContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#mercuryContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+#marsContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#marsContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+#marsContainer h2{
+          font-weight: lighter;
+          font-size: 20px;
+          margin-left: 50px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+          color: white;
+          
+}
+#neptuneContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#neptuneContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+#saturnContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#saturnContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+#uranusContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#uranusContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+#venusContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#venusContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+#moonContainer {
+  position: fixed;
+  background: rgba(93, 119, 236, 0.582);
+  height: 70%;
+  width: 80%;
+  border-radius: 20px;
+  border: 2px blue solid;
+  transition: 0.2s;
+  transform: scale(0);
+}
+#moonContainer h1::before {
+  content: "\2715";
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+#moonContainer h2{
+          font-weight: lighter;
+          font-size: 20px;
+          margin-left: 50px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+          color: white;
+          
+}
+footer{
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+               
+}
+footer a{
+          margin-left: 20px;
+          color: rgb(224, 224, 224);
+          text-decoration: none;
+}
+footer a:hover{
+          text-decoration: underline;
+}
+#loader{
+          position: fixed;
+          z-index: 1230;
+          height: 100vh;
+          width: 100%;
+          background: #0c0c0c;
+          animation: loader 10s infinite linear;
+          display: grid;
+          place-items: center;
+          transform: scale(1);
+          transform-origin: bottom center;
+}
+
+#loader h1{
+color: white;
+animation: loaderText 1s infinite linear;
+}
+@keyframes loaderText {
+          0%{color: white;}
+          50%{color: rgb(255, 0, 64);}
+          100%{color: white;}
+
+}

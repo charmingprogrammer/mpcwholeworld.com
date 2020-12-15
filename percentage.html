@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./percentage.css">
+    <script src="./percentage.js"></script>
+    <title>This is a percentage counter web app</title>
+</head>
+
+<body>
+    <h1 id="text1"><span>PERCENTAGE</span> CALCULATOR</h1>
+    <div class="container-of-all-stream">
+        <div class="science" onclick="science()">
+            <h2>CALCULATE</h2>
+        </div>
+        <a href="index.html">
+        <div class="commerce">
+            <h2>HOME</h2>
+        </div>
+        </a>
+        <a href="about.html">
+        <div class="art" onclick="art()">
+            <h2>ABOUT</h2>
+        </div>
+        </a>
+        <a href="feedback.html">
+        <div class="feedback" onclick="feedback()">
+            <h2>FEEDBACK</h2>
+        </div>
+        </a>
+    </div>
+ <di id="science-info">
+     <span id="cut" onclick="hideScience()"></span>
+     <h3>Enter Your Marks</h3><br><br>
+         <form name= "myForm">
+     <input type="text" placeholder="Your Marks.." id="yourMarks" name="yourMarksName">
+     <input type="text" placeholder="Total Marks.." id="TotalMarks" name="totalMarksName">
+     <button onclick="return(showResult())">%</button>
+     </form><br><br><br>
+     <h2 id="YP"></h2>
+ </div>
+</body>
+
+</html>

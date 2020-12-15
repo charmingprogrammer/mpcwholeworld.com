@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Loader using Html Css</title>
+    <!--use internal css-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container1{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+        #container2{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            animation: circle 2s infinite;
+        }
+        @keyframes circle {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div id="container2">
+            <img src="./hud-3149462_1280.png">
+        </div>
+    </div>
+    
+</body>
+</html>

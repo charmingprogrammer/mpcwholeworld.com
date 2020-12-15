@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn slider round</title>
+    <link rel="stylesheet" href="planet.css" />
+  </head>
+  <body onload="loaderShow()">
+    <div id="container">
+      <span style="--i: 1"
+        ><img src="./world-1301744.svg" onclick="openEarth()" id="earth"
+      /></span>
+      <span style="--i: 2"
+        ><img src="./mercury-153570.svg" id="mercury" onclick="openMercury()"
+      /></span>
+      <span style="--i: 3"
+        ><img src="./mars-25461.svg" id="mars" onclick="openMars()"
+      /></span>
+      <span style="--i: 4"
+        ><img src="./neptune-153571.svg" id="neptune" onclick="openNeptune()"
+      /></span>
+      <span style="--i: 5"
+        ><img src="./saturn-26618.svg" id="saturn" onclick="openSaturn()"
+      /></span>
+      <span style="--i: 6"
+        ><img src="./uranus-153572.svg" id="uranus" onclick="openUranus()"
+      /></span>
+      <span style="--i: 7"
+        ><img src="./venus-26620.svg" onclick="openVenus()" id="venus"
+      /></span>
+      <span style="--i: 8"
+        ><img src="./moon-159383.svg" onclick="openMoon()"
+      /></span>
+    </div>
+
+    <div id="containerForBtn">
+      <button id="btn" onclick="speedChange()">Speed -</button>
+      <button id="btn" onclick="speedChange2()">Speed +</button>
+    </div>
+
+    <!--for knowledge container-->
+    <div id="earthContainer">
+      <h1 onclick="closeEarth()"></h1>
+      <div id="earthInformation">
+        <h2>
+          <span>Earth</span>, our home planet, is a world unlike any other. The
+          third planet from the sun, Earth is the only place in the known
+          universe confirmed to host life. With a radius of 3,959 miles, Earth
+          is the fifth largest planet in our solar system, and it's the only one
+          known for sure to have liquid water on its surface
+        </h2>
+        <h2>Short Info</h2>
+        <h2>
+          <li>
+            View on Maps:
+            <a
+              href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi575CWsK7tAhXw7XMBHeEXDy4QoC4oATAgegQIMhAD&url=http%3A%2F%2Fwww.google.com%2Fmaps%2Fspace%2Fearth&usg=AOvVaw1fVn1gIOMsFEIwvhPrehYM"
+              >google.com/maps/space/earth</a
+            >
+          </li>
+          <li>from Sun: 149.6 million km</li>
+          <li>Radius: 6,371 km</li>
+          <li>Mass: 5.972 × 10^24 kg</li>
+          <li>Age: 4.543 billion years</li>
+          <li>Population: 759.43 crores (2018) World Bank</li>
+        </h2>
+      </div>
+    </div>
+    <div id="mercuryContainer"><h1 onclick="closeMercury()"></h1></div>
+    <div id="marsContainer">
+      <h1 onclick="closeMars()"></h1>
+      <h2>
+        <span>Mars</span> is the fourth planet from the Sun and the
+        second-smallest planet in the Solar System, being larger than only
+        Mercury. In English, Mars carries the name of the Roman god of war and
+        is often referred to as the "Red Planet".
+      </h2>
+      <h2>Short Info</h2>
+      <h2>
+        <li>
+          View on Maps:<a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiX5IOHuq7tAhX_63MBHRtXCWUQoC4oATAiegQIKxAD&url=http%3A%2F%2Fwww.google.com%2Fmaps%2Fspace%2Fmars&usg=AOvVaw3ljaxieFRsmbgwjuq6Dpou"
+          >
+            google.com/maps/space/mars</a
+          >
+        </li>
+        <li>Gravity: 3.711 m/s²</li>
+        <li>Distance from Sun: 227.9 million km</li>
+        <li>Orbital period: 687 days</li>
+        <li>Surface pressure: 0.636 (0.4–0.87) kPa; 0.00628 atm</li>
+        <li>Moons: Phobos, Deimos</li>
+      </h2>
+    </div>
+    <div id="neptuneContainer"><h1 onclick="closeNeptune()"></h1></div>
+    <div id="saturnContainer"><h1 onclick="closeSaturn()"></h1></div>
+    <div id="uranusContainer"><h1 onclick="closeUranus()"></h1></div>
+    <div id="venusContainer"><h1 onclick="closeVenus()"></h1></div>
+    <div id="moonContainer">
+      <h1 onclick="closeMoon()"></h1>
+      <h2>
+        The <span>Moon</span> is a rounded astronomical body of planetary mass,
+        rocky silicate composition and without significant atmosphere,
+        hydrosphere or magnetic field. It is orbiting the planet Earth of the
+        inner Solar System, as Earth's only natural satellite. Its surface
+        gravity is about a sixth of Earth's with 0.1654 g
+      </h2>
+      <h2>Short Info</h2>
+      <h2>
+        <li>
+          View on Maps:<a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjgmJnwuK7tAhXp7XMBHVbuDccQoC4oATAfegQIKBAD&url=http%3A%2F%2Fwww.google.com%2Fmaps%2Fspace%2Fmoon&usg=AOvVaw1PryQpY380Es-VlaA39dMF"
+            >google.com/maps/space/moon</a
+          >
+        </li>
+        <li>Distance to Earth: 384,400 km</li>
+        <li>Gravity: 1.62 m/s²</li>
+        <li>Radius: 1,737.1 km</li>
+        <li>Surface area: 3.793×107 km2; (0.074 of Earth's)</li>
+        <li>Alternative names: Luna; Selene (poetic); Cynthia (poetic)</li>
+      </h2>
+    </div>
+    <!--footer-->
+    <footer>
+       <a href="http://mpcwholeworld.com/privacy-policy.html">privacy Policy</a>
+       <a href="http://mpcwholeworld.com/Terms-and-condition.html">Terms & Condition</a>
+       <a href="http://mpcwholeworld.com/Disclaimer.html">Disclaimer</a>
+       <a href="http://mpcwholeworld.com/AboutUs.html">About Us</a>
+       <a href="index.html">Home</a>
+
+    </footer>
+    <!--loader for this planet-->
+    <div id="loader">
+      <h1>LOADING UNIVERSE</h1>
+    </div>
+    <script src="planet.js"></script>
+  </body>
+</html>

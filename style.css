@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #22282b;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+
+/* style for preloader */
+.containerForImg {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background: #22282b;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+
+}
+
+#for-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  animation: imgLoader 1s infinite ease;
+
+}
+
+
+@keyframes imgLoader {
+  0% {
+      transform: scale(1.5);
+  }
+
+  50% {
+      transform: scale(2);
+  }
+
+  100% {
+      transform: scale(1.5);
+  }
+
+}
+
+#preImg{
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
+
+#divForLoading {
+  position: fixed;
+  bottom: 30%;
+  height: 10px;
+  width: 70%;
+  left: 15%;
+  border-radius: 20px;
+  background: red;
+  z-index: 1;
+
+
+}
+
+.insideLoader {
+  background: linear-gradient(90deg, #4df04d, teal);
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  animation: changeColor 2s infinite ease;
+}
+
+@keyframes changeColor {
+  0% {
+      width: 0%;
+  }
+
+  50% {
+      width: 100%;
+  }
+
+  100% {
+      width: 0%;
+  }
+
+}
+/*preloader end style*/
+
+
+#TopBar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background: #22282b;
+  box-shadow: 0 1px 15px black;
+  font-family: sans-serif;
+}
+
+.container-of-all-item {
+  float: right;
+  margin-top: -45px;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: none;
+  color: white;
+  padding: 13px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.dropbtn:hover {
+  border-bottom: 2px solid red;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(43, 102, 231);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  border-bottom: red solid 2px;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#logo:hover {
+  transform: scale(1.1);
+}
+#mpc-font-logo{
+  color: white;
+  padding: 10px 20px ;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 5px;
+  font-family: sans-serif;
+  display:block;
+}
+
+
+#left-bar {
+  height: 600px;
+  width: 50%;
+  background: #22282b;
+  margin-top: 70px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100%;
+  box-shadow: 0 1px 15px black;
+}
+#left-bar h1 {
+  color: white;
+  font-family: sans-serif;
+  margin-left: 10px;
+  width: 90%;
+  font-size: 50px;
+  background: none;
+}
+#left-bar h1 span {
+  color: yellow;
+  text-shadow: 0 10px 10px black;
+}
+
+#left-bar h2 {
+  color: white;
+  font-family: sans-serif;
+  margin-left: 10px;
+  width: 27%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+#left-bar h2:hover {
+  transform: scale(1.1);
+}
+
+#left-bar p {
+  width: 80%;
+  color: #fff;
+  margin-left: 10px;
+  font-family: sans-serif;
+  background: none;
+}
+#left-bar p:hover {
+  transform: scale(1.02);
+}
+#left-bar h3 {
+  width: 2%;
+  margin-left: 10px;
+  background: blue;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.959);
+  font-family: sans-serif;
+  border-radius: 2px;
+  transition: 100ms;
+  outline: none;
+}
+#left-bar h3:hover {
+  width: 20%;
+}
+
+#chatbot-field {
+  height: 300px;
+  width: 40%;
+  background: none;
+  float: right;
+  margin-right: 30px;
+  margin-top: -550px;
+  box-shadow: 0 1px 15px black;
+}
+#chatbot-field video {
+  height: 100%;
+  width: 100%;
+}
+#input_for-chat {
+  padding: 10px 20px;
+  width: 40%;
+  color: white;
+  background: #22282b;
+  border: none;
+  float: right;
+  margin-right: 30px;
+  margin-top: -200px;
+  box-shadow: 0 1px 15px black;
+}
+/*for contact us*/
+#contact-us {
+  height: 100px;
+  width: 30%;
+  background: #0000ff44;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 5%;
+  border: blue 1px solid;
+  display: none;
+}
+#contact-us p {
+  color: white;
+  text-align: center;
+  background: none;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0 0 10px 10px black;
+}
+#cut::before {
+  content: "\2715";
+  padding: 10px 20px;
+}
+#cut:hover {
+  background: rgba(0, 0, 0, 0.192);
+  color: red;
+}
+#cut2::before {
+  content: "\2715";
+  padding: 10px 20px;
+  text-align: center;
+  margin-left: 60px;
+}
+#cut2:hover {
+  background: rgba(0, 0, 0, 0.192);
+  color: red;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+/*user Chat output style */
+#user-chat {
+  height: 300px;
+  width: 40%;
+  background: #23292c;
+  position: absolute;
+  float: right;
+  margin-right: 30px;
+  margin-top: -305px;
+  box-shadow: 0 1px 15px black;
+  display: none;
+}
+form {
+  text-align: center;
+}
+input {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 1px 15px black;
+}
+textarea {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 1px 15px black;
+}
+#cut-inside-chat::before {
+  content: "\2715";
+  cursor: pointer;
+  float: right;
+  padding: 10px 20px;
+  margin-top: -30px;
+}
+#cut-inside-chat:hover {
+  color: red;
+}
+.category {
+  height: 100%;
+  width: 100%;
+  background: none;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.favorite {
+  height: 400px;
+  width: 350px;
+  background: #22282b;
+  box-shadow: 0 1px 15px black;
+  margin-top: 50px;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+.favorite h2{
+  color: white;
+  box-shadow: 0 1px 15px black;
+  text-align: center;
+  font-family: sans-serif;
+}
+.favorite:hover {
+  transform: scale(1.01);
+  box-shadow: 0 1px 15px blue;
+}
+.favorite img{
+  height: 30%;
+  width: 30%;
+
+}
+.favorite h3{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+.favorite p{
+  color: white;
+  font-family: sans-serif;  
+}
+.read-also {
+  height: 400px;
+  width: 350px;
+  background: #22282b;
+  box-shadow: 0 1px 15px black;
+  margin-top: 50px;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+.read-also h2{
+  color: white;
+  box-shadow: 0 1px 15px black;
+  text-align: center;
+  font-family: sans-serif;
+}
+.read-also:hover {
+  transform: scale(1.01);
+  box-shadow: 0 1px 15px blue;
+}
+.read-also img{
+  height: 30%;
+  width: 30%;
+
+}
+.read-also h3{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+.read-also p{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;  
+}
+footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #22282b;
+  border:1px black solid;
+  
+}
+
+.owner{
+  height: 300px;
+  width: 300px;
+  background: #22282b;
+  box-shadow: 0 1px 15px black;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  transition:.2s;
+}
+.owner #owner{
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 35px;
+  font-size: 20px;
+  
+}
+.owner #developer{
+  text-align: center;
+  margin-left: 70px;
+  
+}
+
+
+.owner:hover {
+  box-shadow: 0 1px 15px blue;
+}
+.follow{
+  height: 300px;
+  width: 300px;
+  background: #22282b;
+  box-shadow: 0 1px 15px black;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  transition:.2s;
+}
+
+.follow #owner{
+  text-align: center;
+margin-top: 30px;
+  margin-left: 80px;
+  font-size: 20px;
+  
+}
+.follow:hover {
+  box-shadow: 0 1px 15px blue;
+}
+.all-follow-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+i{
+  color: #ddd;  
+  box-shadow: 0 1px 15px black;
+  
+}
+i:hover{
+  color: blue;
+}
+.about{
+  height: 300px;
+  width: 300px;
+  background: #22282b;
+  box-shadow: 0 1px 15px black;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition:.2s;
+}
+#button1{
+  color: white;
+  background:#22282b ;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+#button1:hover{
+   transform: scale(0.9);
+}
+.about a {
+  text-align: center;
+  color: white;
+
+  
+  
+}
+.about h3{
+  font-weight: lighter;
+}
+.about a :hover{
+  color: blue;
+}
+.about:hover {
+  box-shadow: 0 1px 15px blue;
+}
+@media only screen and (max-width: 900px) {
+  #left-bar {
+    height: 600px;
+    width: 100%;
+    background: #22282b;
+    margin-top: 70px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0%;
+    box-shadow: 0 1px 15px black;
+  }
+  #chatbot-field {
+    height: 300px;
+    width: 90%;
+    background: none;
+    float: left;
+    margin-right: 0px;
+    margin-left: 5%;
+    margin-top: 50px;
+    box-shadow: 0 1px 15px black;
+  }
+  #input_for-chat {
+    padding: 10px 20px;
+    width: 90%;
+    color: white;
+    background: #22282b;
+    border: none;
+    float: left;
+    margin-left: 5%;
+    margin-right: 0px;
+    margin-top: 20px;
+    box-shadow: 0 1px 15px black;
+  }
+  #contact-us {
+    height: 100px;
+    width: 60%;
+    margin-top: -200px;
+    margin-left: 15%;
+  }
+  #user-chat {
+    height: 310px;
+    width: 90%;
+    background: #22282b;
+    position: absolute;
+    float: left;
+    left: 5%;
+    right: 0;
+    top: 1020px;
+    box-shadow: 0 1px 15px black;
+  }
+  .container-of-all-item {
+    float: right;
+    margin-top: 0px;
+  }
+  #mpc-font-logo{
+    display: none;
+  }
+    #left-bar {
+    width: 100%;
+    margin-top: 70px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0 1px 15px black;
+  }
+  #left-bar h1 {
+    margin-top: -80px;
+  }
+
+  #left-bar h2 {
+    width: 50%;
+  }
+  #containerForMiddle{
+      margin-top:360px;
+  }
+ 
+ 
+}

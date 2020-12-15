@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(12, 48, 53);
+  overflow: hidden;
+  font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#text1 {
+  text-align: center;
+  color: rgb(207, 205, 205);
+  padding: 10px 20px;
+}
+span {
+  color: rgb(197, 9, 135);
+}
+.container-of-all-stream {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.science {
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
+  border: solid 2px rgba(91, 214, 194, 0.836);
+}
+.science:hover {
+  background: rgba(91, 214, 194, 0.836);
+}
+.science h2 {
+  color: rgba(91, 214, 194, 0.836);
+  background: rgba(91, 214, 193, 0);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.commerce {
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
+  border: solid 2px rgba(124, 91, 214, 0.836);
+}
+.commerce:hover {
+  background: rgba(124, 91, 214, 0.836);
+}
+.commerce h2 {
+  color: rgba(124, 91, 214, 0.836);
+  background: rgba(91, 214, 193, 0);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.art {
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
+  border: solid 2px rgba(57, 221, 71, 0.836);
+}
+.art:hover {
+  background: rgba(57, 221, 71, 0.836);
+}
+.art h2 {
+  color: rgba(57, 221, 71, 0.836);
+  background: rgba(91, 214, 193, 0);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.feedback {
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
+  border: solid 2px rgba(197, 118, 0, 0.836);
+}
+.feedback:hover {
+  background: rgba(197, 118, 0, 0.836);
+}
+.feedback h2 {
+  color: rgba(197, 118, 0, 0.836);
+  background: rgba(91, 214, 193, 0);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+h2:hover {
+  color: black;
+  cursor: pointer;
+}
+
+#science-info {
+  height: 500px;
+  width: 80%;
+  background: rgb(41, 73, 78);
+  position: fixed;
+  top: 50px;
+  left: 10%;
+  border-radius: 0px;
+  border: solid 1px rgb(14, 156, 175);
+  display: none;
+}
+#cut {
+  position: relative;
+  float: right;
+  background: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+#cut::before {
+  content: "\2715";
+}
+#cut:hover {
+  background: rgba(0, 0, 0, 0.082);
+  color: red;
+}
+/* for science info...........................*/
+#science-info h3 {
+  color: #ffffff;
+  background: none;
+  text-align: center;
+  margin-top: 40px;
+}
+form {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(41, 73, 78);
+}
+input {
+  background: rgb(41, 73, 78);
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  border-bottom: solid 1px rgb(0, 255, 242);
+  outline: black;
+}
+button {
+  background: rgb(41, 73, 78);
+  color: hsl(0, 0%, 100%);
+  border: solid 1px rgb(204, 30, 195);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(230, 21, 125);
+}
+#YP{
+    text-align: center;
+    background: none;
+    color: white;
+}

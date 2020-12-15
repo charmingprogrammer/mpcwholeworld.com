@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1e2020;
+}
+h2{position: fixed;
+color:rgb(6, 163, 202);
+top: -10px;
+left: 30px;
+  
+}
+.listitem{
+    display: block;
+}
+
+
+.container{
+    height:50px;
+    width:100%;
+    display: block;
+    position: fixed;
+    background: rgba(41, 55, 59, 0);
+    box-shadow: 0  1px 10px black;
+}
+
+
+.hamburger{
+    height:auto;
+    width: auto;
+    display: block;
+    position: fixed;
+    background:red;
+    top: 10px;
+    left: 10px;
+    display: none;
+  
+}
+.hamburger:hover{
+box-shadow: 0 0 5px 5px skyblue;
+}
+
+span{
+    height: 4px;
+    width: 25px;
+    display: block;
+    background: #000;
+    margin: 3px;
+}
+
+
+li{
+    list-style-type: none;
+    float:right;
+    margin: 5px;
+    margin-top: -38px;
+    padding: 14px 23px ;
+}
+li:hover{
+    background-color: rgb(45, 72, 80);
+}
+a{
+    color: #4bd0f1ea;
+    
+    text-decoration: none;
+}
+  #checkbox{visibility:hidden;
+  
+  
+  }
+
+/*....media quarry started form hare....*/
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: #1e2020;
+    }
+      
+  #checkbox{visibility:hidden;
+  
+  
+  }
+
+  label,
+  label::before,
+  label::after{
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    background: #4bd0f1ea;
+    border-radius: 5px;
+    transition:1ms;
+    
+    
+  }
+  label{cursor:pointer;
+  top: 20px;
+  transition: 4ms;
+  }
+  label::before{
+    content: "";
+    transform: translateY(-10px);
+    
+  }
+  label::after{
+    content: "";
+    transform: translateY(10px);
+  
+  }
+  #checkbox:checked + label {
+    width: 0px;
+  }
+  #checkbox:checked + label::before {
+    transform:rotate(45deg) ;
+  }
+  #checkbox:checked + label::after{
+    transform: rotate(-45deg);
+  }
+  #checkbox:checked ~ .listitem{
+    display: block;
+  }
+    
+    h2{top:-10px;
+    left: 90px;
+    position: absolute;
+      
+    }
+    .container{
+        height:50px;
+        width:100%;
+        display: block;
+        position: fixed;
+        background:#1e2020;
+        box-shadow: 0  1px 10px black;
+    }
+
+    
+    .listitem{
+        display: block;
+        background: #1e2020;
+        margin-top: 30px;
+        width: 70%;
+        height: 1200px;
+        position: fixed;
+        display: none;
+        box-shadow: 0 1px 10px black;
+        
+    }
+   
+li{
+    list-style-type: none;
+    float: none;
+    margin: 5px;
+    margin-left: -20px;
+    padding: 14px 60px ;
+    cursor: pointer;
+    position: relative;
+    left: -20px;
+    width: auto;
+    
+    
+}
+a{
+    color: #4bd0f1ea;
+    text-decoration: none;
+     margin-left: -20px;
+}
+  }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New types of navigation bar</title>
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--container for all item-->
+    <div class="container">
+        <!--for side bar -->
+        <div id="sidebar">
+
+        </div>
+        <!--for top header-->
+        <header id="header">
+            <i class="fas fa-align-left fa-2x" id="icon1" onclick="showMenu()"></i>
+            <i class="fas fa-angle-left fa-2x" id="icon2" onclick="hideMenu()"></i>
+        </header>
+        <!--for content body-->
+        <div id="content-body">
+
+        </div>
+    </div>
+
+    <script>
+        function showMenu() {
+            document.getElementById("sidebar").style.width = "20%";
+            document.getElementById("icon2").style.display = "block";
+            document.getElementById("icon1").style.display = "none";
+            document.getElementById("header").style.width = "80%";
+            document.getElementById("content-body").style.width = "80%";
+
+
+        }
+        function hideMenu() {
+            document.getElementById("sidebar").style.width = "0%";
+            document.getElementById("icon2").style.display = "none";
+            document.getElementById("icon1").style.display = "block";
+            document.getElementById("header").style.width = "100%";
+            document.getElementById("content-body").style.width = "100%";
+
+        }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #232f30;
+        }
+
+        #sidebar {
+            height: 1000px;
+            width: 0%;
+            background: #f044b6;
+            position: fixed;
+            top: 0;
+            transition: .5s;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            background: #35bb00;
+            position: fixed;
+            box-shadow: 0 0 10px 1px black;
+            top: 0;
+            right: 0;
+            z-index: 12541;
+            transition: .5s;
+        }
+        #content-body{
+          width: 100%;
+          height: 1000px;
+          background: linear-gradient(red,blue);
+          box-shadow: 0 0 10px 1px black;
+          position: absolute;
+          right: 0;
+          top: 50px;
+          transition: .5s;
+          
+        }
+        i{
+            background: none;
+            margin-top: 10px;
+            cursor: pointer;
+            margin-left: 10px;
+            color: white;
+            position: absolute;
+        }
+
+        #icon2{
+         display: none;
+        }
+    </style>
+
+
+</body>
+
+</html>
