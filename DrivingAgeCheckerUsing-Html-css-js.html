@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to  make Driving Age Checker Web App using HTML,CSS and JAVA-SCRIPT (Easy Way).</title>
+  <meta name="description" content="How to make Driving Age Checker using HTML,CSS and JAVA-SCRIPT (Easy Way).With source code and video.">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="DrivingAgeCheckerUsing-Html-css-js.css"/>
+  <!-- other content of the head element goes here -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body id="body">
+  <!--nevbar html start-->
+  <header id="header">
+    <img src="hello_manohar.png" alt="logo" id="logoImg" />
+    <h1 id="logoText">MPCwholeworld</h1>
+    .<div id="nevbar">
+      <h1 id="open" onclick="openNevBar()"></h1>
+
+
+    </div>
+    <div id="nevbarFill">
+      <img src="hello_manohar.png" alt="logo" id="logoImg2" />
+      <h1 id="logoText2">MPCwholeworld</h1>
+      <div id="closeCon">
+        <h1 id="close" onclick="closeNevBar()"></h1>
+      </div>
+    </div>
+  </header>
+  <div id="nevbarContainer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Videos</a></li>
+      <li><a href="index.html">Blogs</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="index.html">Contact us</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Terms-and-condition.html">Terms&Condition</a></li>
+    </ul>
+
+  </div>
+  <!--nevbar html end-->
+  <!--for accessability-->
+  <div id="accessability" onclick="openAccess()"><i class="fas fa-universal-access fa-3x"></i></div>
+  <div id="accessabilityCutDiv">
+    <h1 id="accessabilityCut" onclick="showAccess()"></h1>
+  </div>
+  <div id="accessabilityItem">
+    <ul>
+      <li><a href="#"><i class="fas fa-home fa-2x"></i></a></li>
+      <li><a href="#comment"><i class="fas fa-comment fa-2x"></i></a></li>
+      <li onclick="shareNow()"><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+      <li><a href="#" onclick="playNow()" id="play"><i class="fas fa-play fa-2x">
+      </i></a></li>
+      <li><a href="#"><i class="fas fa-arrow-up fa-2x"></i></a></li>
+      <li onclick="darkModeA()"><a href="#"><i class="fas fa-moon fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <!--for pause-->
+  <li onclick="pauseNow()" id="pause"><a href="#"><i class="fas fa-pause fa-2x"></i></a></li>
+
+  <!--for share -->
+  <div id="share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23"><i class="fab fa-facebook fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&text=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23"><i class="fab fa-google-plus fa-2x"></i></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&title=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-linkedin fa-2x"></i></a></li>
+      <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&media=&description=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-pinterest  fa-2x"></i></a></li>
+      <li onclick="removeShare()"><a href="#"><i class="fas fa-times fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div id="fullbody" ontouchstart="closeNevBarWithBody()"><br><br>
+    <div id="contentBox">
+      <div id="Ad1">
+        <h3 id="slider1" onclick="slider1()"></h3>
+      </div>
+      <div id="content">
+        <!--your content goes form hare...-->
+        <div id="iframe">
+          <iframe src="http://mpcwholeworld.com/drivingAgeChecker.html" frameborder="0"></iframe>
+        </div>
+        <button id="resize" onclick="resize()">Resize</button> <br> <br><br>
+        <h1 style="margin-left: 10px; margin-right: 10px;">How to Driving Age Checker Using html css and javascript (easy way).</h1>
+        <br><br><br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;">File Structure</h3><br>
+        <p style="margin-left: 10px; margin-right: 10px;">1.HTML file Name:<a
+            href="#html">drivingAgeChecker.html</a></p>
+        <p style="margin-left: 10px; margin-right: 10px;">2.CSS file Name :<a href="#css">drivingAgeChecker.css</a>
+        </p> 
+        <p style="margin-left: 10px; margin-right: 10px;">3.Javascript file Name :<a href="#js">drivingAgeChecker.js</a>
+        </p>
+        <br><br><br>
+        <article style="margin-left: 10px; margin-right: 10px;">
+          Do you wanna make Driving Age Checker web App like this keep watching this project till the end you learn everything you need. ooo i am not using any types of framework or libraries.its pure html css and js. Let's get started
+         Hope you enjoy this project . You have any
+          question related code <a href="#comment">Ask Now</a>.
+        </article> <br><br><br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="html">Add HTML ...</h3><br>
+        <!--code for this article-->
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="HTML">
+              &lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>    &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>    &lt;title&gt;Driving Age Checker&lt;/title&gt;<br/>    &lt;link rel=&quot;stylesheet&quot; href=&quot;drivingAgeChecker.css&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>    &lt;div id=&quot;container&quot;&gt;<br/>        &lt;img src=&quot;./automobile-1300231_1280.png&quot; alt=&quot;driving Age Checker pic&quot;&gt;<br/>        &lt;div id=&quot;formContainer&quot;&gt;<br/>            &lt;form  name = &quot;myForm&quot; onsubmit=&quot;return(Result())&quot;&gt;<br/>                &lt;input type=&quot;text&quot; placeholder=&quot;Inter Your Age..&quot; name=&quot;UserAge&quot;&gt;<br/>                &lt;button&gt;Check&lt;/button&gt;<br/>                &lt;h2 id=&quot;ResultOutput&quot;&gt;&lt;/h2&gt;<br/>            &lt;/form&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/><br/>&lt;/body&gt;<br/>&lt;/html&gt;
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="css">Add CSS ...</h3> <br>
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="CSS">
+              *{<br/>    margin: 0;<br/>    padding: 0;<br/>    box-sizing: border-box;<br/>}<br/>#container{<br/>    height: 100%;<br/>    width: 100%;<br/>    position: fixed;<br/>}<br/>img{<br/>    height: 100%;<br/>    width: 100%;<br/>    position: absolute;<br/>    bottom: -150px;<br/>}<br/><br/>#formContainer{<br/>    height: 70%;<br/>    width: 70%;<br/>    position: fixed;<br/>    left: 15%;<br/>    top: 50px;<br/>    display: flex;<br/>    justify-content: center;<br/>    background: linear-gradient(#dddd,transparent);<br/>    <br/>}<br/>input{<br/>    border: none;<br/>    padding: 10px;<br/>    border-radius: 5px;<br/>    margin-top: 50px;<br/>    box-shadow: 0 0 10px 1px #dddd;<br/>}<br/>button{<br/>    border: none;<br/>    padding: 10px;<br/>    border-radius: 5px;<br/>    cursor: pointer;<br/>    box-shadow: 0 0 10px 1px #dddd;<br/><br/>}<br/>#ResultOutput{<br/>    text-align: center;<br/>    margin-top: 50px;<br/>    font-family: sans-serif;<br/>    color: rgba(128, 126, 126, 0.867);<br/>}                                                                                                                                                                                       
+              <br><br><br>
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="js">Add JAVA-SCRIPT ...</h3><br>
+        <!--code for this article-->
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="javascript">
+              function Result() {<br/>            if(document.myForm.UserAge.value == &quot;&quot;){<br/>                document.getElementById(&quot;ResultOutput&quot;).innerText = &quot;Please Provide Your Age&quot;;<br/>                return false;<br/>            }<br/>            if(document.myForm.UserAge.value &gt;= 80) {<br/>                document.getElementById(&quot;ResultOutput&quot;).innerText = &quot;You Are Not Ready For Driving.Because You Are To Old.&quot;;<br/>                return false;<br/><br/>            }<br/><br/>            if(document.myForm.UserAge.value &gt;= 18) {<br/>                document.getElementById(&quot;ResultOutput&quot;).innerText = &quot;Yoo! bro You Are Ready For Driving. Chill Bro&quot;;<br/>                return false;<br/>            }<br/>            else{<br/>                document.getElementById(&quot;ResultOutput&quot;).innerText = &quot;Sorry ! You Are Not Ready For Driving.&quot;;<br/>                return false;<br/>            }<br/>        }
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <p style="margin-left: 10px; margin-right: 10px;">I hope you enjoy this tutorial. For more project please comment me.And I will see you! you! you! in the next project. By By  </p> <br><br><br><br>
+        <h3 style="text-align: center;">Thank YOU</h3>
+      </div>
+      <div id="Ad2">
+        <h3 id="slider2" onclick="slider2()"></h3>
+      </div>
+    </div><br><br>
+    <div id="for-comment-and-more">
+      <div id="comment">
+
+        <form action="my_user_data.php" method="POST">
+          <input type="text" placeholder="Name...." name="viewerName" id="name"><br><br>
+          <input type="email" placeholder="Email..." name="viewerEmail" id="email"><br><br>
+          <textarea placeholder="Feedback please..." cols="20" rows="5" name="viewerMassages"
+            id="textarea"></textarea><br><br>
+          <input type="submit" value="Comment" id="btn">
+
+        </form>
+      </div>
+      <div id="more">
+        <div id="more-content-container">
+          <div id="mccI"><img src="ResponsiveNevBarThumbnail.jpg" alt="thumbnail for Videos"><a href="" ><h1>
+            How to Make Navigation bar using HTML and CSS? <p>Type:Text</p></h1></a></div>
+
+          <div id="mccI"><img src="ResponsiveNevBarThumbnail.jpg" alt="thumbnail for Videos"><a href=""><h1>
+            How to Make Navigation bar using HTML and CSS? <p>Type:video</p><p>Duration:15min</p></h1></a></div>
+
+            <div id="mccI"><img src="imgslider.jpg" alt="thumbnail for Videos"><a href="imgsliderToturial.html "><h1>
+              How to Make Image slider  using HTML ,CSS and javascript ? <p>Type:Text</p></h1></a></div>
+
+              <div id="mccI"><img src="imgslider.jpg" alt="thumbnail for Videos"><a href="imgsliderToturial.html"><h1>
+                How to Make Image slider  using HTML ,CSS and javascript ? <p>Type:video</p><p>Duration:20min</p></h1></a></div>
+
+                <div id="mccI"><img src="imgslider.jpg" alt="thumbnail for Videos"><a href="imgsliderToturial.html "><h1>
+                  How to Make Image slider  using HTML ,CSS and javascript ? <p>Type:Text</p></h1></a></div>
+    
+                  <div id="mccI"><img src="imgslider.jpg" alt="thumbnail for Videos"><a href="imgsliderToturial.html"><h1>
+                    How to Make Image slider  using HTML ,CSS and javascript ? <p>Type:video</p><p>Duration:20min</p></h1></a></div>
+                    <div id="mccI"><img src="imgslider.jpg" alt="thumbnail for Videos"><a href="imgsliderToturial.html "><h1>
+                      How to Make Image slider  using HTML ,CSS and javascript ? <p>Type:Text</p></h1></a></div>
+        
+                      <div id="mccI"><img src="imgslider.jpg" alt="thumbnail for Videos"><a href="imgsliderToturial.html"><h1>
+                        How to Make Image slider  using HTML ,CSS and javascript ? <p>Type:video</p><p>Duration:20min</p></h1></a></div>
+        </div>
+      </div>
+    </div><br><br>
+    <footer>
+      <h1>Owner and Developer</h1>
+      <h2>Manohar Anand</h2>
+      <div id="followItem">
+        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ManoharAnand20"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://github.com/charmingprogrammer"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGi5xq1AEhdBAAAAXVFXYwArrCHRXmD090iqZjhBZv1aVusDtZ1o5djc4ljA2cCFikN-QOAJf0j_HTXwnd1GWidXEzl8nCOttoqDFAb4C0n7jvJGUcuB5b9OGvnGcjo9enA0fE=&originalReferer=http://mpcwholeworld.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcharming-programmer-4177701b6%2F"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/charming_programmer/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>All rights reversed by Manohar Anand.</p>
+    </footer>
+ 
+  </div>
+
+<audio src="#" id="responsiveBarAudio"></audio>
+
+
+  <script type="text/javascript" charset="utf-8">
+    function openNevBar() {
+      document.getElementById("nevbarFill").style.right = "0%";
+      document.getElementById("nevbarContainer").style.left = "0%";
+    }
+    function closeNevBar() {
+      document.getElementById("nevbarFill").style.right = "-100%";
+
+      document.getElementById("nevbarContainer").style.left = "-100%";
+    }
+    function closeNevBarWithBody() {
+      document.getElementById("nevbarContainer").style.left = "-100%";
+      document.getElementById("nevbarFill").style.right = "-100%";
+      document.getElementById("accessabilityItem").style.bottom = "-100%";
+      document.getElementById("accessabilityCutDiv").style.display = "none";
+
+
+    }
+    //for accessability 
+    function openAccess() {
+      var access = document.getElementById("accessabilityItem");
+      access.style.bottom = "100px";
+      document.getElementById("accessabilityCutDiv").style.display = "block";
+    }
+    function showAccess() {
+      document.getElementById("accessabilityCutDiv").style.display = "none";
+      document.getElementById("accessabilityItem").style.bottom = "-100%";
+
+
+    }
+    //for dark mode script
+    //#22282b color code for dark mode
+    function darkModeA() {
+      var fullBody = document.getElementById("body");
+      fullBody.classList.toggle("dark");
+      document.getElementById("header").style.boxShadow = "0 1px 10px black";
+    }
+
+
+    //for ad sliding left and right
+
+    function slider1() {
+      document.getElementById("Ad1").style.width = "0%";
+      document.getElementById("Ad1").style.boxShadow = "none";
+      document.getElementById("slider1").style.display = "none";
+      document.getElementById("content").style.width = "80%";
+
+    }
+
+    function slider2() {
+      document.getElementById("Ad2").style.width = "0%";
+      document.getElementById("Ad2").style.boxShadow = "none";
+      document.getElementById("slider2").style.display = "none";
+      document.getElementById("content").style.width = "80%";
+    }
+    //for share button
+    function shareNow() {
+      document.getElementById("share").style.right = "10px";
+
+
+    }
+
+    //for remove share
+    function removeShare() {
+      document.getElementById('share').style.right = "-1000px";
+    }
+
+    //for iframe 
+    function resize() {
+      var x = document.getElementById("iframe");
+      x.classList.toggle("iframe");
+    }
+
+    //for play 
+    function playNow() {
+     var rba =  document.getElementById("responsiveBarAudio");
+     rba.play();
+     document.getElementById("pause").style.right = "10px";
+    
+    
+
+
+    }
+
+    //for pause
+    function pauseNow() {
+     var rba =  document.getElementById("responsiveBarAudio");
+     rba.pause();
+     document.getElementById("pause").style.right = "-1000px";
+
+    }
+
+  </script>
+
+
+
+
+
+
+
+
+</body>

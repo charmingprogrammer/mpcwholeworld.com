@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to make awesome content slider using html css and javascript.2020 latest way with source code?</title>
+  <link rel="stylesheet" href="contentslider.css" />
+  <!-- other content of the head element goes here -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body id="body">
+  <!--nevbar html start-->
+  <header id="header">
+    <img src="hello_manohar.png" alt="logo" id="logoImg" />
+    <h1 id="logoText">MPCwholeworld</h1>
+    .<div id="nevbar">
+      <h1 id="open" onclick="openNevBar()"></h1>
+
+
+    </div>
+    <div id="nevbarFill">
+      <img src="hello_manohar.png" alt="logo" id="logoImg2" />
+      <h1 id="logoText2">MPCwholeworld</h1>
+      <div id="closeCon">
+        <h1 id="close" onclick="closeNevBar()"></h1>
+      </div>
+    </div>
+  </header>
+  <div id="nevbarContainer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="index.html/#contactMe">Contact us</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Terms-and-condition.html">Terms&Condition</a></li>
+    </ul>
+
+  </div>
+  <!--nevbar html end-->
+  <!--for accessability-->
+  <div id="accessability" onclick="openAccess()"><i class="fas fa-universal-access fa-3x"></i></div>
+  <div id="accessabilityCutDiv">
+    <h1 id="accessabilityCut" onclick="showAccess()"></h1>
+  </div>
+  <div id="accessabilityItem">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home fa-2x"></i></a></li>
+      <li><a href="#comment"><i class="fas fa-comment fa-2x"></i></a></li>
+      <li onclick="shareNow()"><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+      <li><a href="#" onclick="playNow()" id="play"><i class="fas fa-play fa-2x">
+      </i></a></li>
+      <li><a href="#"><i class="fas fa-arrow-up fa-2x"></i></a></li>
+      <li onclick="darkModeA()"><a href="#"><i class="fas fa-moon fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <!--for pause-->
+  <li onclick="pauseNow()" id="pause"><a href="#"><i class="fas fa-pause fa-2x"></i></a></li>
+
+  <!--for share -->
+  <div id="share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23"><i class="fab fa-facebook fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&text=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23"><i class="fab fa-google-plus fa-2x"></i></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&title=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-linkedin fa-2x"></i></a></li>
+      <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&media=&description=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-pinterest  fa-2x"></i></a></li>
+      <li onclick="removeShare()"><a href="#"><i class="fas fa-times fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div id="fullbody" ontouchstart="closeNevBarWithBody()"><br><br>
+    <div id="contentBox">
+      <div id="Ad1">
+        <h3 id="slider1" onclick="slider1()"></h3>
+      </div>
+      <div id="content">
+        <!--your content goes form hare...-->
+        <div id="iframe">
+          <iframe src="http://mpcwholeworld.com/divslider.html" frameborder="0"></iframe>
+        </div>
+        <button id="resize" onclick="resize()">Resize</button> <br> <br><br>
+        <h1 style="margin-left: 10px; margin-right: 10px;">How to make awesome content slider using html css and javascript.2020 latest way with source code?</h1>
+        <br><br><br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;">Step to do</h3><br>
+        <p style="margin-left: 10px; margin-right: 10px;">1.Make 2 files. [html & Css]</p><br>
+        <p style="margin-left: 10px; margin-right: 10px;">2.Add Html structure. </p><br>
+        <p style="margin-left: 10px; margin-right: 10px;">3.Link CSS file. </p><br>
+        <p style="margin-left: 10px; margin-right: 10px;">4.Add container inside of body tag.</p><br>
+        <p style="margin-left: 10px; margin-right: 10px;">5.Add 10+ div inside of container. </p><br>
+        <p style="margin-left: 10px; margin-right: 10px;">6.Style all items.</p><br>
+        <p style="margin-left: 10px; margin-right: 10px;">7.Add javascript bottom of the body</p><br>
+        <br><br><br>
+        <article style="margin-left: 10px; margin-right: 10px;">
+
+          This is a awesome  div slider without slider just tap on the left and right button. you can use this into your website free free free .
+          Interested to making this types of project just subscribe me on youtube and learn new daily <a href="https://www.youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg">Subscribe Now</a>. You have any
+          question related code <a href="#comment">Ask Now</a>.
+        </article> <br><br><br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="html">Add HTML ...</h3><br>
+        <!--code for this article-->
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="HTML">
+           &lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>          &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>          &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>          &lt;title&gt;Content slider using button&lt;/title&gt;<br/>          &lt;link rel=&quot;stylesheet&quot; href=&quot;divslider.css&quot;&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>          &lt;div id=&quot;container&quot;&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;div id=&quot;div1&quot;&gt;<br/><br/>                    &lt;/div&gt;<br/>                    &lt;button id=&quot;left&quot; onclick=&quot;left()&quot;&gt;&lt;/button&gt;<br/>                    &lt;button id=&quot;right&quot; onclick=&quot;right()&quot;&gt;&lt;/button&gt;<br/>          &lt;/div&gt;<br/>          &lt;div id=&quot;hideScrollbar&quot;&gt;           <br/>          &lt;/div&gt;<br/>          &lt;script&gt;<br/>                    function left(){<br/>                              var container = document.getElementById(&quot;container&quot;);<br/>                              container.scrollBy(500,0);<br/>                    }<br/>                    function right(){<br/>                                var container = document.getElementById(&quot;container&quot;);<br/>                              container.scrollBy(-500,0);<br/>                    }<br/>          &lt;/script&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt;
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="css">Add CSS ...</h3> <br>
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="CSS">
+              *{<br/>          margin: 0;<br/>          padding: 0;<br/>          box-sizing: border-box;<br/>}<br/>body{<br/>          overflow: hidden;<br/>}<br/>#container{<br/>          height: 300px;<br/>          width: 100%;<br/>          margin-top: 50px;<br/>          display: flex;<br/>          overflow-x: auto;<br/>          scroll-behavior: smooth;<br/>}<br/>#div1{<br/>          height: 100%;<br/>          min-width: 200px;<br/>          background: blue;<br/>          margin-left: 10px;<br/>          border-radius: 10px;<br/>          transform: scale(0.9);<br/>          box-shadow: 0  5px 1px black;<br/>}<br/>#hideScrollbar{<br/>          height: 20px;<br/>          width: 100%;<br/>          background: white;<br/>          margin-top: -13px;<br/><br/>}<br/>#left{<br/>          position: absolute;<br/>          left: 0;<br/>          top: 170px;<br/>          padding: 5px;<br/>          border-top-right-radius: 10px;<br/>          border-bottom-right-radius: 10px;<br/>          background: #0000002a;<br/>          border: none;<br/>          outline: none;<br/>          cursor: pointer;<br/>}<br/>#left:hover{<br/>          transform: scale(1.2);<br/>}<br/>#left::before{<br/>          content: &quot;\276f&quot;;<br/>}<br/>#right{<br/>          position: absolute;<br/>          right: 0;<br/>          top: 170px;<br/>          padding: 5px;<br/>          border-top-left-radius: 10px;<br/>          border-bottom-left-radius: 10px;<br/>          background: #0000002a;<br/>          border: none;<br/>          outline: none;<br/>          cursor: pointer;<br/>}<br/>#right:hover{<br/>          transform: scale(1.2);<br/>}<br/><br/>#right::before{<br/>          content: &quot;\276E&quot;;<br/>}
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <p style="margin-left: 10px; margin-right: 10px;">I hope you enjoy this tutorial. For more project please comment me.And I will see you! you! you! in the next project. By By  </p> <br><br><br><br>
+        <h3 style="text-align: center;">Thank YOU</h3>
+      </div>
+      <div id="Ad2">
+        <h3 id="slider2" onclick="slider2()"></h3>
+      </div>
+    </div><br><br>
+    <div id="for-comment-and-more">
+      <div id="comment">
+
+        <form action="my_user_data.php" method="POST">
+          <input type="text" placeholder="Name...." name="viewerName" id="name"><br><br>
+          <input type="email" placeholder="Email..." name="viewerEmail" id="email"><br><br>
+          <textarea placeholder="Feedback please..." cols="20" rows="5" name="viewerMassages"
+            id="textarea"></textarea><br><br>
+          <input type="submit" value="Comment" id="btn">
+
+        </form>
+      </div>
+      <div id="more">
+        <div id="more-content-container">
+          <a href="PercentageCalculator.html">
+                <div id="blog">
+                     <div id="img">
+                               <img src="percentage.png" alt="Preview Pic">
+                     </div>
+                     <div id="description">
+                          <h2>How to make Percentage Calculator Using html css and js (easy way).</h2>
+                          <p>Date:27 oct 2020</p>
+                     </div>
+                     </div>
+                     </a>
+                     <a href="sideBarTutorial.html">
+                     <div id="blog">
+                               <div id="img">
+                                         <img src="SideBar.png" alt="Preview Pic">
+                               </div>
+                               <div id="description">
+                                    <h2>How to make Awesome Side Bar menu using HTML,CSS and js (Easy Way)?</h2>
+                                    <p>Date:26 oct 2020</p>
+                               </div>
+                               </div>
+                                   </a>
+                                   <a href="TechWebLoader.html">
+                     <div id="blog">
+                               
+                               <div id="img">
+                                         <img src="hud-3149462_1280.png " alt="Preview Pic">
+                               </div>
+                               <div id="description">
+                                    <h2>How to make Tech Website Loader using Html css?</h2>
+                                    <p>Date:25 oct 2020</p>
+                               </div>
+                               </div>
+                             </a>
+                             <a href=" DrivingAgeCheckerUsing-Html-css-js.html ">
+                     <div id="blog">
+                              
+                               <div id="img">
+                                         <img src="DrivingAge.png" alt="Preview Pic">
+                               </div>
+                               <div id="description">
+                                    <h2>How to make Driving Age Checker Using html css and javascript (easy way).</h2>
+                                    <p>Date:24 oct 2020</p>
+                               </div>
+                               </div>
+                                 </a>
+                                <a href="how-to-make-quiz-app.html">
+                     <div id="blog">
+                               
+                               <div id="img">
+                                         <img src="quiz.png" alt="Preview Pic">
+                               </div>
+                               <div id="description">
+                                    <h2>How to make Quiz game Using html css and javascript (easy way)</h2>
+                                    <p>Date:23 oct 2020</p>
+                               </div>
+                               </div>
+                                    </a>
+                                    <a href="login-or-sign-up-page-toturial.html ">
+                     <div id="blog">
+                              
+                               <div id="img">
+                                         <img src="login.png" alt="Preview Pic">
+                               </div>
+                               <div id="description">
+                                    <h2>How to make Login and Sign Up page Using html css and javascript (easy way).</h2>
+                                    <p>Date:22 oct 2020</p>
+                               </div>
+                               </div>
+                               </a>
+                               <a href="imgsliderToturial.html">
+                     <div id="blog">
+                     
+                     <div id="img">
+                               <img src="imgslider.png" alt="Preview Pic">
+                     </div>
+                     <div id="description">
+                          <h2>How to make image slider using HTML, Css And javascript?</h2>
+                          <p>Date:21 oct 2020</p>
+                     </div>
+                     </div>
+                        </a>
+                        <a href="templet.html">
+                     <div id="blog">
+                               
+                               <div id="img">
+                                         <img src="ResponsiveNevBarThumbnail.jpg" alt="Preview Pic">
+                               </div>
+                               <div id="description">
+                                    <h2>How to make Nev Bar or Side bar using HTML And CSS?</h2>
+                                    <p>Date:20 oct 2020</p>
+                               </div>
+                     </div>
+                    </a>
+                     </div>
+      </div>
+    </div><br><br>
+    <footer>
+      <h1>Owner and Developer</h1>
+      <h2>Manohar Anand</h2>
+      <div id="followItem">
+        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ManoharAnand20"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://github.com/charmingprogrammer"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGi5xq1AEhdBAAAAXVFXYwArrCHRXmD090iqZjhBZv1aVusDtZ1o5djc4ljA2cCFikN-QOAJf0j_HTXwnd1GWidXEzl8nCOttoqDFAb4C0n7jvJGUcuB5b9OGvnGcjo9enA0fE=&originalReferer=http://mpcwholeworld.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcharming-programmer-4177701b6%2F"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/charming_programmer/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>All rights reversed by Manohar Anand.</p>
+    </footer>
+ 
+  </div>
+
+<audio src="./responsiveBarAudio.mp3" id="responsiveBarAudio"></audio>
+
+
+  <script type="text/javascript" charset="utf-8">
+    function openNevBar() {
+      document.getElementById("nevbarFill").style.right = "0%";
+      document.getElementById("nevbarContainer").style.left = "0%";
+    }
+    function closeNevBar() {
+      document.getElementById("nevbarFill").style.right = "-100%";
+
+      document.getElementById("nevbarContainer").style.left = "-100%";
+    }
+    function closeNevBarWithBody() {
+      document.getElementById("nevbarContainer").style.left = "-100%";
+      document.getElementById("nevbarFill").style.right = "-100%";
+      document.getElementById("accessabilityItem").style.bottom = "-100%";
+      document.getElementById("accessabilityCutDiv").style.display = "none";
+
+
+    }
+    //for accessability 
+    function openAccess() {
+      var access = document.getElementById("accessabilityItem");
+      access.style.bottom = "100px";
+      document.getElementById("accessabilityCutDiv").style.display = "block";
+    }
+    function showAccess() {
+      document.getElementById("accessabilityCutDiv").style.display = "none";
+      document.getElementById("accessabilityItem").style.bottom = "-100%";
+
+
+    }
+    //for dark mode script
+    //#22282b color code for dark mode
+    function darkModeA() {
+      var fullBody = document.getElementById("body");
+      fullBody.classList.toggle("dark");
+      document.getElementById("header").style.boxShadow = "0 1px 10px black";
+    }
+
+
+    //for ad sliding left and right
+
+    function slider1() {
+      document.getElementById("Ad1").style.width = "0%";
+      document.getElementById("Ad1").style.boxShadow = "none";
+      document.getElementById("slider1").style.display = "none";
+      document.getElementById("content").style.width = "80%";
+
+    }
+
+    function slider2() {
+      document.getElementById("Ad2").style.width = "0%";
+      document.getElementById("Ad2").style.boxShadow = "none";
+      document.getElementById("slider2").style.display = "none";
+      document.getElementById("content").style.width = "80%";
+    }
+    //for share button
+    function shareNow() {
+      document.getElementById("share").style.right = "10px";
+
+
+    }
+
+    //for remove share
+    function removeShare() {
+      document.getElementById('share').style.right = "-1000px";
+    }
+
+    //for iframe 
+    function resize() {
+      var x = document.getElementById("iframe");
+      x.classList.toggle("iframe");
+    }
+
+    //for play 
+    function playNow() {
+     var rba =  document.getElementById("responsiveBarAudio");
+     rba.play();
+     document.getElementById("pause").style.right = "10px";
+    
+    
+
+
+    }
+
+    //for pause
+    function pauseNow() {
+     var rba =  document.getElementById("responsiveBarAudio");
+     rba.pause();
+     document.getElementById("pause").style.right = "-1000px";
+
+    }
+
+  </script>
+
+
+</body>

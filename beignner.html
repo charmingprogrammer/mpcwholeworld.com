@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you ready or not for web dev for beginners.</title>
+
+    <!..............STYLE GOES HARE.......................>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background: rgb(18, 44, 43);
+                font-family: Arial;
+            }
+
+            #heading1 {
+                text-align: center;
+                color: rgb(11, 248, 209);
+                text-decoration: underline rgb(104, 221, 201);
+            }
+
+            form {
+                text-align: center;
+            }
+
+            a {
+                color: white;
+                font-size: 20px;
+            }
+
+            #btn {
+                padding: 10px 20px;
+                background: rgb(11, 248, 209);
+                border-radius: 20px;
+                outline: none;
+                border-color: rgb(11, 248, 209);
+                cursor: pointer;
+            }
+
+            #btn:hover {
+                background: rgb(0, 132, 255);
+                border-color: rgb(0, 132, 255);
+                font-weight: bold;
+            }
+
+            select {
+                background: rgb(11, 248, 209);
+                padding: 2px 5px;
+                outline: none;
+                border-color: rgb(11, 248, 209);
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            #heading2 {
+
+                color: rgb(11, 248, 209);
+
+                display: none;
+                left: 10%;
+                position: absolute;
+                background: rgb(18, 44, 43);
+                height: 120px;
+                font-weight: lighter;
+            }
+
+            #heading3 {
+                color: rgb(11, 248, 209);
+
+                display: none;
+                left: 10%;
+                position: absolute;
+                height: 120px;
+                background: rgb(18, 44, 43);
+                font-weight: lighter;
+            }
+
+            #heading4 {
+                color: rgb(11, 248, 209);
+
+                display: none;
+                left: 10%;
+                position: absolute;
+                height: 120px;
+                background: rgb(18, 44, 43);
+                font-weight: lighter;
+            }
+
+            #heading5 {
+                color: rgb(11, 248, 209);
+
+                display: none;
+                left: 10%;
+                position: absolute;
+                height: 120px;
+                background: rgb(18, 44, 43);
+                font-weight: lighter;
+            }
+
+            span {
+                font-weight: bold;
+                color: rgb(2, 255, 150);
+
+
+            }
+
+
+
+            @media only screen and (min-width: 700px) {
+                .container {
+                    margin-top: 5%;
+
+                }
+
+            }
+
+            @media only screen and (max-width: 700px) {
+
+                #heading1 {
+                    text-decoration: none;
+                }
+
+                #heading2,
+                #heading2,
+                #heading3,
+                #heading4,
+                #heading5 {
+                    left: 5%;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading1">ARE YOU READY OR NOT FOR WEB DEVELOPING FOR BEGINNERS.</h1><br><br>
+        <form name="myFile" onsubmit="return(showResult());">
+
+            <a>DO YOU UNDERSTAND HTML)----------</a><select name="chooser1" id=" html">
+                <option value="-1">Choose</option>
+                <option value="1">YES</option>
+                <option value="2">NO</option>
+            </select><br><br><br>
+            <a>DO YOU UNDERSTAND CSS)------------</a><select name="chooser2">
+                <option value="-2">Choose</option>
+                <option value="3">YES</option>
+                <option value="4">NO</option>
+            </select><br><br><br>
+            <a>DO YOU UNDERSTAND JAVA-Script)---</a><select name="chooser3">
+                <option value="-3">Choose</option>
+                <option value="5">YES</option>
+                <option value="6">NO</option>
+            </select><br><br><br>
+            <a>DO YOU UNDERSTAND PHP)-------------</a><select name="chooser4">
+                <option value="-4">Choose</option>
+                <option value="7">YES</option>
+                <option value="8">NO</option>
+            </select><br><br><br>
+            <a>DO YOU UNDERSTAND MYSQL)---------</a><select name="chooser5">
+                <option value="-5">Choose</option>
+                <option value="9">YES</option>
+                <option value="10">NO</option>
+            </select><br><br><br>
+
+            <input type="submit" name="btn" id="btn" value="Check Now">
+            <div class="output">
+                <h1 id="heading2">[ YOU HAVE <span>BASIC INFORMATION</span> ABOUT WEB DEVELOPING. ]</h1>
+                <h1 id="heading3">[YOU HAVE <span>INTERMEDIATE INFORMATION</span> ABOUT WEB DEVELOPING.]</h1>
+                <h1 id="heading4">[YOU HAVE <span>EXCELLENT INFORMATION</span> ABOUT WEB DEVELOPING.]</h1>
+                <h1 id="heading5">[YOU HAVE <span>NO INFORMATION</span> ABOUT WEB DEVELOPING.]</h1>
+            </div>
+        </form>
+
+        <!.................script started form hare....................................>
+            <script>
+                function showResult() {
+
+                    // script for not select (1)
+                    if (document.myFile.chooser1.value == "-1") {
+                        alert("Please choose TRUE or False.In line 1 ");
+                        return false;
+                    }
+                    if (document.myFile.chooser2.value == "-2") {
+                        alert("Please choose TRUE or False. In line 2");
+                        return false;
+                    }
+
+                    if (document.myFile.chooser3.value == "-3") {
+                        alert("Please choose TRUE or False. In line 3");
+                        return false;
+                    }
+
+
+                    if (document.myFile.chooser4.value == "-4") {
+                        alert("Please choose TRUE or False. In line 4 ");
+                        return false;
+                    }
+                    if (document.myFile.chooser5.value == "-5") {
+                        alert("Please choose TRUE or False. In line 5 ");
+                        return false;
+                    }
+
+                    //(1) end......................
+
+                    //CONDITION (2) APPLY 
+                    if (document.myFile.chooser1.value == "1")
+                        if (document.myFile.chooser2.value == "3")
+                            if (document.myFile.chooser3.value == "6")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        document.getElementById("heading2").style.display = "block";
+                                        return false;
+
+                                    }
+
+
+                    //(2)END...................
+
+
+                    //CONDITION (3) APPLY
+                    if (document.myFile.chooser1.value == "1")
+                        if (document.myFile.chooser2.value == "3")
+                            if (document.myFile.chooser3.value == "5")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        document.getElementById("heading3").style.display = "block";
+                                        return false;
+                                    }
+                    //(3) end........................
+                    //condition (4) apply
+                    if (document.myFile.chooser1.value == "1")
+                        if (document.myFile.chooser2.value == "3")
+                            if (document.myFile.chooser3.value == "5")
+                                if (document.myFile.chooser4.value == "7")
+                                    if (document.myFile.chooser5.value == "9") {
+                                        document.getElementById("heading4").style.display = "block";
+                                        return false;
+                                    }
+                    //(4) end............
+                    // condition (5) apply 
+                    if (document.myFile.chooser1.value == "2")
+                        if (document.myFile.chooser2.value == "4")
+                            if (document.myFile.chooser3.value == "6")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        document.getElementById("heading5").style.display = "block";
+                                        return false;
+                                    }
+                    //(5) end............
+                    // CONDITION (6)
+
+                    if (document.myFile.chooser1.value == "1")
+                        if (document.myFile.chooser2.value == "4")
+                            if (document.myFile.chooser3.value == "6")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        alert("you have little bit information please learn more like css, java-script php, mysql");
+                                        return true;
+                                    }
+                    //(6)end
+                    // CONDITION (7)
+
+                    if (document.myFile.chooser1.value == "2")
+                        if (document.myFile.chooser2.value == "3")
+                            if (document.myFile.chooser3.value == "6")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        alert("you have little bit information please learn more like ,html,js,php,mysql");
+                                        return true;
+                                    }
+                    //(7)end
+                    // CONDITION (8)
+
+                    if (document.myFile.chooser1.value == "2")
+                        if (document.myFile.chooser2.value == "4")
+                            if (document.myFile.chooser3.value == "5")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        alert("you have little bit information please learn more like html ,css ,php ,mysql");
+                                        return true;
+                                    }
+                    //(8)end
+                    // CONDITION (9)
+
+                    if (document.myFile.chooser1.value == "2")
+                        if (document.myFile.chooser2.value == "4")
+                            if (document.myFile.chooser3.value == "5")
+                                if (document.myFile.chooser4.value == "8")
+                                    if (document.myFile.chooser5.value == "10") {
+                                        alert("you have little bit information please learn more like html ,css ,php ,mysql");
+                                        return true;
+                                    }
+                    //(9)end
+
+
+
+
+
+
+
+
+                    return (true);
+
+
+
+
+
+
+
+
+
+
+                }
+
+
+            </script>
+</body>
+
+</html>

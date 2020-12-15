@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a color tic tac to Game for everyone</title>
+    <link rel="stylesheet" href="colortictacto.css">
+    <script src="colortictacto.js"></script>
+</head>
+
+<body>
+    <h1>COLOR <span id="span1"> TIC TAC TO</span></h1>
+    <div class="container1">
+        <div id="user1">
+            <div class="red">
+                <form name="redForm">
+                    <input type="text" placeholder="Red Player Name.." name="player1" id="input1">
+                </form>
+            </div>
+        </div>
+        <div id="user2">
+
+            <div class="green">
+                <form name="greenForm">
+                    <input type="text" placeholder="Green Player Name ..." name="player2" id="input2">
+                </form>
+            </div>
+        </div>
+
+        <a href="#div9">
+            <div id="play" onclick="return(showName())">
+                <h2>PLAY</h2>
+            </div>
+        </a>
+
+
+    </div><br><br><br>
+    <div class="user-info">
+
+        <h2 class="player1name"><span id="redPlayer"></span></h2>
+
+        <h2 class="player2name"><span id="greenPlayer"></span></h2>
+
+    </div><br><br>
+
+    <div class="container2">
+        <div id="div1">
+            <div id="clicker1green" onclick="block1a()"></div>
+            <div id="clicker1red" onclick="block1b()"></div>
+        </div>
+        <div id="div2">
+            <div id="clicker2green" onclick="block2a()"></div>
+            <div id="clicker2red" onclick="block2b()"></div>
+        </div>
+        <div id="div3">
+            <div id="clicker3green" onclick="block3a()"></div>
+            <div id="clicker3red" onclick="block3b()"></div>
+        </div>
+        <div id="div4">
+            <div id="clicker4green" onclick="block4a()"></div>
+            <div id="clicker4red" onclick="block4b()"></div>
+        </div>
+        <div id="div5">
+            <div id="clicker5green" onclick="block5a()"></div>
+            <div id="clicker5red" onclick="block5b()"></div>
+        </div>
+        <div id="div6">
+            <div id="clicker6green" onclick="block6a()"></div>
+            <div id="clicker6red" onclick="block6b()"></div>
+        </div>
+        <div id="div7">
+            <div id="clicker7green" onclick="block7a()"></div>
+            <div id="clicker7red" onclick="block7b()"></div>
+        </div>
+        <div id="div8">
+            <div id="clicker8green" onclick="block8a()"></div>
+            <div id="clicker8red" onclick="block8b()"></div>
+        </div>
+        <div id="div9">
+            <div id="clicker9green" onclick="block9a()"></div>
+            <div id="clicker9red" onclick="block9b()"></div>
+        </div>
+    </div> 
+    <br><br><br><br>
+</body>
+
+</html>

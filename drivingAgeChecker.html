@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Age Checker</title>
+    <link rel="stylesheet" href="drivingAgeChecker.css">
+</head>
+<body>
+    <div id="container">
+        <img src="./automobile-1300231_1280.png" alt="driving Age Checker pic">
+        <div id="formContainer">
+            <form  name = "myForm" onsubmit="return(Result())">
+                <input type="text" placeholder="Inter Your Age.." name="UserAge">
+                <button>Check</button>
+                <h2 id="ResultOutput"></h2>
+            </form>
+        </div>
+    </div>
+
+    <!--Time for write js-->
+    <script>
+        function Result() {
+            if(document.myForm.UserAge.value == ""){
+                document.getElementById("ResultOutput").innerText = "Please Provide Your Age";
+                return false;
+            }
+            if(document.myForm.UserAge.value >= 80) {
+                document.getElementById("ResultOutput").innerText = "You Are Not Ready For Driving.Because You Are To Old.";
+                return false;
+
+            }
+
+            if(document.myForm.UserAge.value >= 18) {
+                document.getElementById("ResultOutput").innerText = "Yoo! bro You Are Ready For Driving. Chill Bro";
+                return false;
+            }
+            else{
+                document.getElementById("ResultOutput").innerText = "Sorry ! You Are Not Ready For Driving.";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
+<!--by by and see you next time......-->
