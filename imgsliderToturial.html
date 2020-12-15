@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to make Image Slider Using html css and javascript (easy way).creating image slider using html css and javascript.</title>
+  <meta name="description" content="How to make Image Slider(Easy Way) Using html css and javascript (easy way).creating image slider using html css and javascript only.">
+  <meta name="keywords" content="image slider js
+  imgslider angular
+  image slider example,
+  image slider tutorial,
+  img slider in modal,
+  image slider active,
+  amp image slider,
+  bootstrap image slider,
+  background image slider,
+  img slider css,
+  image slider codepen,
+  image slider comparison,
+  carousel image slider,
+  change img slider,
+  image/slider/full width/3.jpg,
+  img slider fade,
+  image slider in html,
+  html5 img slider,
+  html css image slider,
+  img slider in css,
+  ionic image slider,
+  image slider images,
+  jquery image slider,
+  image/slider.jpg,
+  image slider json,
+  link image slider,
+  multiple image slider,
+  make image slider,
+  main-image-slider,
+  opacity image slider,
+  image slider plugin,
+  img slider product,
+  php image slider,
+  react image slider,
+  responsive image slider,
+  img/slider/slider 1.jpg,
+  img/slider/slider 3.jpg,
+  simple image slider,
+  slide image template,
+  image slider thumbnails,
+  vue js image slider,
+  video image slider,
+  image slider w3schools,
+  image slider websites,
+  image/slide/01.jpg,
+  image/slider/02.jpg,
+  img/slider/1.jpg,
+  slick slider image width 100,
+  images/slider-image-1.jpg,
+  slider-image-1,
+  img/slider/2.png,
+  image/slider/3.jpg,
+  img/slide/4.jpg,">
+  <link rel="stylesheet" href="ImgsliderToturial.css" />
+  <!-- other content of the head element goes here -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/monokai-sublime.min.css">
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body id="body">
+  <!--nevbar html start-->
+  <header id="header">
+    <img src="hello_manohar.png" alt="logo" id="logoImg" />
+    <h1 id="logoText">MPCwholeworld</h1>
+    .<div id="nevbar">
+      <h1 id="open" onclick="openNevBar()"></h1>
+
+
+    </div>
+    <div id="nevbarFill">
+      <img src="hello_manohar.png" alt="logo" id="logoImg2" />
+      <h1 id="logoText2">MPCwholeworld</h1>
+      <div id="closeCon">
+        <h1 id="close" onclick="closeNevBar()"></h1>
+      </div>
+    </div>
+  </header>
+  <div id="nevbarContainer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="index.html/#contactMe">Contact us</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+      <li><a href="Terms-and-condition.html">Terms&Condition</a></li>
+    </ul>
+
+  </div>
+  <!--nevbar html end-->
+  <!--for accessability-->
+  <div id="accessability" onclick="openAccess()"><i class="fas fa-universal-access fa-3x"></i></div>
+  <div id="accessabilityCutDiv">
+    <h1 id="accessabilityCut" onclick="showAccess()"></h1>
+  </div>
+  <div id="accessabilityItem">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home fa-2x"></i></a></li>
+      <li><a href="#comment"><i class="fas fa-comment fa-2x"></i></a></li>
+      <li onclick="shareNow()"><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+      <li><a href="#" onclick="playNow()" id="play"><i class="fas fa-play fa-2x">
+      </i></a></li>
+      <li><a href="#"><i class="fas fa-arrow-up fa-2x"></i></a></li>
+      <li onclick="darkModeA()"><a href="#"><i class="fas fa-moon fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <!--for pause-->
+  <li onclick="pauseNow()" id="pause"><a href="#"><i class="fas fa-pause fa-2x"></i></a></li>
+
+  <!--for share -->
+  <div id="share">
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23"><i class="fab fa-facebook fa-2x"></i></a></li>
+      <li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&text=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23"><i class="fab fa-google-plus fa-2x"></i></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&title=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-linkedin fa-2x"></i></a></li>
+      <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmpcwholeworld.com%2Ftemplet.html%23&media=&description=Take%20your%20Business%20online%20with%20me.%20Contact%20me%20now"><i class="fab fa-pinterest  fa-2x"></i></a></li>
+      <li onclick="removeShare()"><a href="#"><i class="fas fa-times fa-2x"></i></a></li>
+    </ul>
+  </div>
+  <div id="fullbody" ontouchstart="closeNevBarWithBody()"><br><br>
+    <div id="contentBox">
+      <div id="Ad1">
+        <h3 id="slider1" onclick="slider1()"></h3>
+      </div>
+      <div id="content">
+        <!--your content goes form hare...-->
+        <div id="iframe">
+          <iframe src="http://mpcwholeworld.com/imageSlider.html" frameborder="0"></iframe>
+        </div>
+        <button id="resize" onclick="resize()">Resize</button> <br> <br><br>
+        <h1 style="margin-left: 10px; margin-right: 10px;">How to make Image Slider Using html css and javascript (easy way). </h1>
+        <br><br><br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;">File Structure</h3><br>
+        <p style="margin-left: 10px; margin-right: 10px;">1.HTML file Name:<a
+            href="#html">imageSlider.html.html</a></p>
+        <p style="margin-left: 10px; margin-right: 10px;">2.CSS file Name :<a href="#css">imageSlider.css</a>
+        </p> 
+        <p style="margin-left: 10px; margin-right: 10px;">3.Javascript file Name :<a href="#js">imageSlider.js</a>
+        </p>
+        <br><br><br>
+        <article style="margin-left: 10px; margin-right: 10px;">
+          Do you wanna make image slider like this keep watching this project till the end you learn everything you need. ooo i am not using any types of framework or libraries.its pure html css and js. Let's get started
+         Hope you enjoy this project . You have any
+          question related code <a href="#comment">Ask Now</a>.
+        </article> <br><br><br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="html">Add HTML ...</h3><br>
+        <!--code for this article-->
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="HTML">
+              &lt;!DOCTYPE html&gt;<br/>&lt;html lang=&quot;en&quot;&gt;<br/>&lt;head&gt;<br/>    &lt;meta charset=&quot;UTF-8&quot;&gt;<br/>    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;<br/>    &lt;title&gt;Image Slider Tutorial  by Manohar Anand form MpcWholeworld.com&lt;/title&gt;<br/>    &lt;!--links all files your css and js .--&gt;<br/>    &lt;link rel=&quot;stylesheet&quot; href=&quot;./imageSlider.css&quot;&gt;<br/>    &lt;script src=&quot;imageSlider.js&quot;&gt;&lt;/script&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>&lt;div id=&quot;containerForImg&quot;&gt;<br/>    &lt;!--add img whate'er you like--&gt;<br/>    &lt;img id=&quot;img1&quot;src=&quot;./butterfly-3054736_1920.jpg&quot; alt=&quot;imageSliderPicture&quot;&gt;<br/>    &lt;img id=&quot;img2&quot; src=&quot;./c60540a9ac31d02c6e228853e0ef42a1.jpg&quot; alt=&quot;imageSliderPicture&quot;&gt;<br/>    &lt;img id=&quot;img3&quot; src=&quot;./Gnome Desktop Wallpaper 108 2K No Logo.png&quot; alt=&quot;imageSliderPicture&quot;&gt;<br/>    &lt;img id=&quot;img4&quot; src=&quot;./mountain.jpg&quot; alt=&quot;imageSliderPicture&quot;&gt;<br/>    &lt;img id=&quot;img5&quot; src=&quot;./alberta-2297204_640.jpg&quot; alt=&quot;imageSliderPicture&quot;&gt;<br/>&lt;/div&gt;<br/>&lt;!---Add 5circles--&gt;<br/>&lt;div id=&quot;containerForCircle&quot;&gt;<br/>    &lt;div id=&quot;circle1&quot; onclick=&quot;showImg1()&quot;&gt;&lt;/div&gt;<br/>    &lt;div id=&quot;circle2&quot; onclick=&quot;showImg2()&quot;&gt;&lt;/div&gt;<br/>    &lt;div id=&quot;circle3&quot; onclick=&quot;showImg3()&quot;&gt;&lt;/div&gt;<br/>    &lt;div id=&quot;circle4&quot; onclick=&quot;showImg4()&quot;&gt;&lt;/div&gt;<br/>    &lt;div id=&quot;circle5&quot; onclick=&quot;showImg5()&quot;&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt;<br>
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="css">Add CSS ...</h3> <br>
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="CSS">
+              * {<br/>  padding: 0;<br/>  margin: 0;<br/>  box-sizing: border-box;<br/>}<br/>#containerForImg {<br/>  height: 70%;<br/>  width: 70%;<br/>  position: fixed;<br/>  background: white;<br/>  margin-left: 15%;<br/>  margin-top: 50px;<br/>  overflow: hidden;<br/>  border-radius: 10px;<br/>}<br/><br/>#img1 {<br/>  height: 100%;<br/>  width: 100%;<br/>  position: absolute;<br/>  transition: 0.5s;<br/>}<br/><br/>#img2,<br/>#img3,<br/>#img4,<br/>#img5 {<br/>  height: 100%;<br/>  width: 100%;<br/>  position: absolute;<br/>  right: -100%;<br/>  transition: 0.5s;<br/>}<br/>/*style for circles*/<br/>#containerForCircle {<br/>  height: 30px;<br/>  width: 70%;<br/>  position: fixed;<br/>  left: 15%;<br/>  bottom: 90px;<br/>  border-radius: 10px;<br/>  display: flex;<br/>  justify-content: space-evenly;<br/>}<br/>#circle1 {<br/>  display: block;<br/>  height: 30px;<br/>  width: 30px;<br/>  border: 3px blue solid;<br/>  border-radius: 100px;<br/>  cursor: pointer;<br/>}<br/><br/>#circle2,<br/>#circle3,<br/>#circle4,<br/>#circle5 {<br/>  height: 30px;<br/>  width: 30px;<br/>  border: 3px blue solid;<br/>  border-radius: 100px;<br/>  cursor: pointer;<br/>  display: none;<br/>}<br/>#circle1:hover {<br/>  background: blue;<br/>}<br/>#circle2:hover {<br/>  background: blue;<br/>}<br/><br/>#circle3:hover {<br/>  background: blue;<br/>}<br/><br/>#circle4:hover {<br/>  background: blue;<br/>}<br/>#circle5:hover {<br/>  background: blue;<br/>}<br/>
+              <br><br><br>
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <h3 style="margin-left: 10px; margin-right: 10px;" id="js">Add JAVA-SCRIPT ...</h3><br>
+        <!--code for this article-->
+        <div id="forCode">
+          <div id="forCodeSlider">
+            <pre><code class="javascript">
+              function showImg1() {<br/>    document.getElementById(&quot;img2&quot;).style.right = &quot;0%&quot;;<br/>    document.getElementById(&quot;circle1&quot;).style.display = &quot;none&quot;;<br/>    document.getElementById(&quot;circle2&quot;).style.display = &quot;block&quot;;<br/>}<br/><br/>function showImg2() {<br/>    document.getElementById(&quot;img2&quot;).style.right = &quot;100%&quot;;<br/>    document.getElementById(&quot;img3&quot;).style.right = &quot;0%&quot;;<br/>    document.getElementById(&quot;circle2&quot;).style.display = &quot;none&quot;;<br/>    document.getElementById(&quot;circle3&quot;).style.display = &quot;block&quot;;<br/><br/><br/>}<br/>function showImg3() {<br/>    document.getElementById(&quot;img3&quot;).style.right = &quot;100%&quot;;<br/>    document.getElementById(&quot;img4&quot;).style.right = &quot;0%&quot;;<br/>    document.getElementById(&quot;circle3&quot;).style.display = &quot;none&quot;;<br/>    document.getElementById(&quot;circle4&quot;).style.display = &quot;block&quot;;<br/><br/>}<br/>function showImg4() {<br/>    document.getElementById(&quot;img4&quot;).style.right = &quot;100%&quot;;<br/>    document.getElementById(&quot;img5&quot;).style.right = &quot;0%&quot;;<br/>    document.getElementById(&quot;circle4&quot;).style.display = &quot;none&quot;;<br/>    document.getElementById(&quot;circle5&quot;).style.display = &quot;block&quot;;<br/><br/>}<br/>function showImg5() {<br/>    document.getElementById(&quot;img5&quot;).style.right = &quot;100%&quot;;<br/>    document.getElementById(&quot;img1&quot;).style.right = &quot;0%&quot;;<br/>    document.getElementById(&quot;circle5&quot;).style.display = &quot;none&quot;;<br/>    document.getElementById(&quot;circle1&quot;).style.display = &quot;block&quot;;<br/>    location.reload();<br/>}
+           </code></pre>
+          </div>
+        </div> <br><br>
+        <p style="margin-left: 10px; margin-right: 10px;">I hope you enjoy this tutorial. For more project please comment me.And I will see you! you! you! in the next project. By By  </p> <br><br><br><br>
+        <h3 style="text-align: center;">Thank YOU</h3>
+      </div>
+      <div id="Ad2">
+        <h3 id="slider2" onclick="slider2()"></h3>
+      </div>
+    </div><br><br>
+    <div id="for-comment-and-more">
+      <div id="comment">
+
+        <form action="my_user_data.php" method="POST">
+          <input type="text" placeholder="Name...." name="viewerName" id="name"><br><br>
+          <input type="email" placeholder="Email..." name="viewerEmail" id="email"><br><br>
+          <textarea placeholder="Feedback please..." cols="20" rows="5" name="viewerMassages"
+            id="textarea"></textarea><br><br>
+          <input type="submit" value="Comment" id="btn">
+
+        </form>
+      </div>
+      <div id="more">
+        <div id="more-content-container">
+            
+        <div id="mccI"><a href="templet.html"><img src="ResponsiveNevBarThumbnail.jpg" alt="thumbnail for Videos"><h1>
+            How to Make Navigation bar using HTML and CSS? <p>Type:Text</p></h1></a></div>
+            
+            
+         <div id="mccI"><a href = "templetVideo.html"><img src="ResponsiveNevBarThumbnail.jpg" alt="thumbnail for Videos"><h1>
+            How to Make Navigation bar using HTML and CSS? <p>Type:video</p><p>Duration:15min</p></h1></a></div>
+            
+            
+          <div id="mccI"></div>
+          <div id="mccI"></div>
+          <div id="mccI"></div>
+          <div id="mccI"></div>
+          <div id="mccI"></div>
+          <div id="mccI"></div>
+        </div>
+      </div>
+    </div><br><br>
+    <footer>
+      <h1>Owner and Developer</h1>
+      <h2>Manohar Anand</h2>
+      <div id="followItem">
+        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ManoharAnand20"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg?view_as=subscriber"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://github.com/charmingprogrammer"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQGi5xq1AEhdBAAAAXVFXYwArrCHRXmD090iqZjhBZv1aVusDtZ1o5djc4ljA2cCFikN-QOAJf0j_HTXwnd1GWidXEzl8nCOttoqDFAb4C0n7jvJGUcuB5b9OGvnGcjo9enA0fE=&originalReferer=http://mpcwholeworld.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcharming-programmer-4177701b6%2F"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/charming_programmer/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>All rights reversed by Manohar Anand.</p>
+    </footer>
+ 
+  </div>
+
+<audio src="./imgslider.mp3" id="responsiveBarAudio"></audio>
+
+
+  <script type="text/javascript" charset="utf-8">
+    function openNevBar() {
+      document.getElementById("nevbarFill").style.right = "0%";
+      document.getElementById("nevbarContainer").style.left = "0%";
+    }
+    function closeNevBar() {
+      document.getElementById("nevbarFill").style.right = "-100%";
+
+      document.getElementById("nevbarContainer").style.left = "-100%";
+    }
+    function closeNevBarWithBody() {
+      document.getElementById("nevbarContainer").style.left = "-100%";
+      document.getElementById("nevbarFill").style.right = "-100%";
+      document.getElementById("accessabilityItem").style.bottom = "-100%";
+      document.getElementById("accessabilityCutDiv").style.display = "none";
+
+
+    }
+    //for accessability 
+    function openAccess() {
+      var access = document.getElementById("accessabilityItem");
+      access.style.bottom = "100px";
+      document.getElementById("accessabilityCutDiv").style.display = "block";
+    }
+    function showAccess() {
+      document.getElementById("accessabilityCutDiv").style.display = "none";
+      document.getElementById("accessabilityItem").style.bottom = "-100%";
+
+
+    }
+    //for dark mode script
+    //#22282b color code for dark mode
+    function darkModeA() {
+      var fullBody = document.getElementById("body");
+      fullBody.classList.toggle("dark");
+      document.getElementById("header").style.boxShadow = "0 1px 10px black";
+    }
+
+
+    //for ad sliding left and right
+
+    function slider1() {
+      document.getElementById("Ad1").style.width = "0%";
+      document.getElementById("Ad1").style.boxShadow = "none";
+      document.getElementById("slider1").style.display = "none";
+      document.getElementById("content").style.width = "80%";
+
+    }
+
+    function slider2() {
+      document.getElementById("Ad2").style.width = "0%";
+      document.getElementById("Ad2").style.boxShadow = "none";
+      document.getElementById("slider2").style.display = "none";
+      document.getElementById("content").style.width = "80%";
+    }
+    //for share button
+    function shareNow() {
+      document.getElementById("share").style.right = "10px";
+
+
+    }
+
+    //for remove share
+    function removeShare() {
+      document.getElementById('share').style.right = "-1000px";
+    }
+
+    //for iframe 
+    function resize() {
+      var x = document.getElementById("iframe");
+      x.classList.toggle("iframe");
+    }
+
+    //for play 
+    function playNow() {
+     var rba =  document.getElementById("responsiveBarAudio");
+     rba.play();
+     document.getElementById("pause").style.right = "10px";
+    
+    
+
+
+    }
+
+    //for pause
+    function pauseNow() {
+     var rba =  document.getElementById("responsiveBarAudio");
+     rba.pause();
+     document.getElementById("pause").style.right = "-1000px";
+
+    }
+
+  </script>
+
+
+
+
+
+
+
+
+</body>

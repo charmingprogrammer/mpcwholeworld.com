@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  font-family: sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2019/10/01/13/58/coffee-4518354__340.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#name{
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  top: 19px;
+  right: 0;
+  border: none;
+}
+#container {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  color: black;
+  padding: 10px 20px;
+  box-shadow: 0 0 1px 1px black;
+  width: 300px;
+  display: flex;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+span {
+  width: 250px;
+}
+h2:hover {
+  box-shadow: 0 0 10px 2px black;
+}
+input {
+  height: 30px;
+  width: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+}
