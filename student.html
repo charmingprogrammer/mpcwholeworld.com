@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>ALL HCC STUDENTS DATABASE PROVIDED BY MANOHAR ANAND </title>
+          <style>
+                    body{
+                              margin: 0;
+                              padding: 0;
+                              font-family: sans-serif;
+                              background: rgb(39, 39, 39);
+                    }
+                    #container{
+                              height: 100vh;
+                              width: 100%;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: flex-start;
+                              align-items: flex-start;
+                    }
+                    .data{
+                              width: 1000px;
+                              height: 70px;
+                              margin-top: 20px;
+                              display: flex;
+                              flex-wrap: nowrap;
+                              justify-content: space-around;
+                              align-items: center;
+                              margin-left: 30px;
+                              }
+                              
+
+                    .data img{
+                              height: 60px;
+                              width: 60px;
+                              border-radius: 100px;
+                              box-shadow: 0 1px 5px #21e7e7;
+                              transition: .5s;
+                          
+                    }
+                    .data img:hover{
+                             
+                             transform: scale(5);
+                         
+                    }
+                    #studentName{
+                              width: 300px;
+                              height: 50px;
+                              display: grid;
+                              place-items: center;
+                              border-radius: 10px; 
+                              color: #35ffe4;
+                              text-shadow: 0 1px 15px #0051ff ;
+                              transition: .5s;
+                              
+                                              
+                                 }
+                                 #studentName:hover,#fatherNAME:hover,
+                                 #classNumber:hover{
+                                    transform: scale(1.2 );
+                                    cursor: pointer;
+                                 }
+
+
+                    #fatherNAME{
+                              width: 400px;
+                              height: 50px;
+                              display: grid;
+                              place-items: center;
+                              border-radius: 10px;  
+                              color: #35ffe4;
+                              text-shadow: 0 1px 15px #0051ff ;
+                              transition: .5s;
+                              
+                                               
+                               }
+                    #classNumber{
+                              width: 200px;
+                              height: 50px;
+                              display: grid;
+                              place-items: center;
+                              border-radius: 10px;
+                              color: #35ffe4;
+                              text-shadow: 0 1px 15px #0051ff;
+                              transition: .5s;
+                                                  
+
+
+                              }
+
+          </style>
+</head>
+<body>
+          <div id="container">
+
+                    <div class="data">
+                              <img src="/Photo_1608654927602_Processed.png" alt="student-pic">
+                              <h3 id="studentName">Students Names</h3>
+                              <h3 id="fatherNAME">Students Father's Name</h3>
+                              <h3 id="classNumber">Class Number</h3>
+
+                    </div>
+                    <div class="data">
+                              <img src="komalpic.jpg" alt="student-pic">
+                              <h3 id="studentName">Komal Kumari</h3>
+                              <h3 id="fatherNAME">Uma Shankar Mandal</h3>
+                              <h3 id="classNumber">6</h3>
+
+                    </div>
+ 
+ 
+          </div>
+</body>
+</html>
