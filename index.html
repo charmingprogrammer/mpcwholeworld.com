@@ -1,465 +1,1334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn programming with programmer</title>
+    <meta
+      name="description"
+      content="(project Idea) provided html css and javascript project idea. get project idea form hare and boost your coding life."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      /* nav bar Area  */
+      .topBar {
+        height: 50px;
+        width: 100%;
+        top: 0;
+        background: #ffffff;
+        position: sticky;
+        box-shadow: 0 0 10px 1px #0000005f;
+        display: flex;
+        font-variant: small-caps;
+        align-items: center;
+      }
+      .logoPic {
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        transform: scale(0.9);
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .topBar p {
+        font-size: 20px;
+        height: 50px;
+        display: grid;
+        place-content: center;
+        font-weight: bold;
+      }
+      .topRightMenu {
+        height: 50px;
+        width: 300px;
+        position: absolute;
+        right: 0;
+      }
+      #darkMode {
+        height: 50px;
+        width: 100px;
+        background: #000;
+        border-radius: 100px;
+        transform: scale(0.5);
+        float: right;
+      }
+      #toggler {
+        height: 50px;
+        width: 50px;
+        background: #3bdfd7;
+        border-radius: 100px;
+        transform: scale(0.9);
+        transition: 0.5s;
+      }
+      #toggler:hover {
+        transform: scale(1.2);
+      }
+      /* for toggle dark and white */
+      .darkWhiteToggler {
+        float: right;
+      }
+      .changeColor {
+        background: #1a1e21;
+        color: #ffffffc4;
+      }
+      /* main container area */
+      #mainContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #box1 {
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .left-container {
+        height: 95%;
+        width: 99%;
+        top: 80px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 0 10px 1px #0000005f;
+      }
+      .left-container h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 50px;
+        margin-top: 50px;
+      }
+      .left-container h1 span {
+        text-shadow: 0 1px 1px black;
+        color: #ff9c2c;
+      }
+      .left-container p {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 70%;
+        font-variant: small-caps;
+        margin-top: 20px;
+      }
+      #menu {
+        padding: 10px 30px;
+        margin-left: 20px;
+        background: none;
+        outline: none;
+        width: 80px;
+        display: grid;
+        place-content: center;
+        font-weight: lighter;
+        font-size: 15px;
+        box-shadow: 0 0 10px 1px #00000028;
+        border-radius: 3px;
+        transition: 0.5s;
+        margin-top: 20px;
+      }
+      #menu:hover {
+        box-shadow: 0 0 10px 1px #00000091;
+        border: 1px solid;
+        cursor: default;
+      }
 
-<head>
-    <script data-ad-client="ca-pub-4365651039511906" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-  <title>Do you Wants to make awesome website.visit now</title>
-  <meta name="description" content="find html css awesome design with source code. ">
-  <meta name="keywords" content=",
-  google translate id
-links
-google translation id
-link
-you tube
-nulls
-youtube
-java script
-translate with google
-phyton
-python
-sql
-li
-colour picker
+      #box2 {
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      /* menu design  */
+      #containerForMenu {
+        height: 50%;
+        width: 80%;
+        box-shadow: 0 0 10px 1px #0000005f;
+        border-radius: 10px;
+        display: flex;
+        overflow: hidden;
+      }
 
-  ">
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
-  <!--font awesome link-->
-  <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
-<style>
-    #man{
-  height: 400px;
-  width: 350px;
-  background: #22282b;
-  box-shadow: 0 1px 15px black;
-  margin-top: 50px;
-  border-radius: 5px;
-  overflow-y: scroll;
-}
-#man:hover {
-  transform: scale(1.01);
-  box-shadow: 0 1px 15px blue;
-}
-#man h2{
-  color: white;
-  box-shadow: 0 1px 15px black;
-  text-align: center;
-  font-family: sans-serif;
-}
-       a{
-          text-decoration: none;
-          
+      .boxes {
+        height: 100%;
+        min-width: 300px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        font-variant: small-caps;
+      }
+
+      #content {
+        height: 300px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px #434242 solid;
+        border-radius: 10px;
+        transform: scale();
+        text-decoration: none;
+        color: black;
+      }
+      #content:hover {
+        box-shadow: 0 0 10px 1px #000000bb;
+      }
+      #imageContainer {
+        height: 60%;
+        width: 100%;
+      }
+      #imageContainer img {
+        height: 100%;
+        width: 100%;
+      }
+      #titleContainer {
+        height: 40%;
+        width: 100%;
+      }
+      #titleContainer h1 {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      #backgroundArea {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100%;
+      }
+      #backgroundArea p {
+        background-color: NONE;
+        color: #35e9689f;
+        font-weight: bold;
+        animation: sizeChange 1s infinite;
+      }
+      /* @keyframes sizeChange {
+          0%{}
+          50%{}          
+          100%{}
+} */
+      /* controller */
+      #controller {
+        height: 10%;
+        width: 80%;
+        box-shadow: 0 0 10px 1px #0000005f;
+        border-radius: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: default;
+      }
+      #pre {
+        height: 100%;
+        width: 29%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-variant: small-caps;
+        font-size: 20px;
+        transition: 0.5s;
+      }
+      #pre:hover {
+        background: #4d5959;
+      }
+      #feedback {
+        height: 70%;
+        width: 39%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-variant: small-caps;
+        font-size: 20px;
+        transition: 0.5s;
+      }
+      #feedback:hover {
+        background: #4d5959;
+        transform: scale(0.9);
+      }
+      #feedbackArea {
+        height: 50%;
+        width: 40%;
+        border-radius: 10px;
+        position: absolute;
+        transform: scale(0);
+        transform-origin: bottom center;
+        transition: 0.5s;
+      }
+      #feedbackArea form {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #feedbackArea form input {
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-bottom: 1px solid blue;
+        outline: none;
+        border-radius: 100px;
+      }
+      #feedbackArea form input:hover {
+        border-radius: 100px;
+      }
+      #feedbackArea form textarea {
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: 1px solid blue;
+        outline: none;
+        border-radius: 10px;
+      }
+      #cut {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+      #cut::before {
+        content: "\2715";
+      }
+      #next {
+        height: 100%;
+        width: 29%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-variant: small-caps;
+        font-size: 20px;
+        transition: 0.5s;
+      }
+      #next:hover {
+        background: #4d5959;
+      }
+      #agreement {
+        margin-top: 50px;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      #agreement button {
+        border: none;
+        outline: none;
+        background-color: black;
+        padding: 0px 10px;
+        margin-left: 3px;
+        color: #ffffff;
+        margin-top: 3px;
+      }
+      #agreement button:hover {
+        background: blue;
+        color: white;
+      }
+      @media only screen and (max-width: 400px) {
+        #containerForMenu {
+          overflow-x: scroll;
         }
-        /*for midddle code style*/
-                            #containerForMiddle{
-                              height: 300px;
-                              width: 100%;
-                              border-radius: 10px;
-                              display: flex;
-                              overflow: hidden;
-                               background:#22282b;
-                              scroll-behavior: smooth;
-                              
-                    }
-                    #blog{
-                              height: 100%;
-                              min-width: 200px;
-                              margin-left: 10px;
-                              background: #22282b;
-                              border-radius: 10px;
-                              transition: .5s;
-                              background:#22282b;
-                              box-shadow:0 0 10px 1px black;
-                              transform:scale(0.9);
-                    }
-                    #blog:hover{
-                         box-shadow:0 0 10px 1px blue;
-                    }
-
-                    #img{
-                              height: 50%;
-                              width: 200px;
-                              background: #22282b;
-                              border-top-right-radius: 10px;
-                              border-top-left-radius: 10px;
-                              
-                    }
-                    #img img{
-                              height: 100%;
-                              width: 100%;
-                              border-top-right-radius: 10px;
-                              border-top-left-radius: 10px;
-                    }
-                    #description{
-                              height: 50%;
-                              width: 200px;
-                              background:#22282b;
-                              border-bottom-right-radius: 10px;
-                              border-bottom-left-radius: 10px;
-                              font-family: sans-serif;
-                              overflow: hidden;
-                    }
-                    #description h2{
-                              color: #dddddd;
-                              font-size: 1rem;
-                              margin-top: 10px;
-                              margin-right: 10px;
-                              margin-left: 10px;
-                    }
-                    #description p{
-                              color: #767474;
-                              font-size: 15px;
-                              margin-top: 10px;
-                              margin-right: 10px;
-                              margin-left: 10px;
-                    }
-                    
-                    #buttonCon{
-                              height: 30px;
-                              width: 100%;
-                              margin-top:-13px;
-                              background:#22282b;
-                    }
-                    #left{
-                              position: absolute;
-                              left: 0;
-                              top: 860px;
-                              cursor: pointer;
-                              padding: 10px 10px;
-                              background: #00000019;
-                              color:white;
-                              border: none;
-                              outline: none;
-                              border-top-right-radius: 10px;
-                              border-bottom-right-radius: 10px;
-                    }
-                    #left:hover{
-                              background: #2b46dca9;
-                              
-                    }
-                    #right:hover{
-                              background: #2b46dca9;
-                              
-                    }
-                    #right{
-                              position: absolute;
-                              right: 0;
-                              top: 860px;
-                              cursor: pointer;
-                              padding: 10px 10px;
-                              background: #00000019;
-                              color:white;
-                              border: none;
-                              outline: none;
-                              border-top-left-radius: 10px;
-                              border-bottom-left-radius: 10px;
-                    }
-                    #left::before{
-                                content: "\276E";   
-                    }
-                    #right::before{
-                                content: "\276f";  
-                    }
-                    @media only screen and (max-width:400px) {
-                              #left,#right{
-                                        display: none;
-                              }
-                    }
-</style>
-</head>
-
-<body onload="preloader()">
-     <!-- code for preloader -->
-  <div id="containerForPreloader">
-  <div class="containerForImg">
-    <div id="for-img">
-        <img src="./hello_manohar.png" id="preImg">
-    </div>
-
-</div>
-<div id="divForLoading">
-    <div class="insideLoader"></div>
-</div>
-</div>
-  <!--End Preloader code-->
-  
-  <div id="left-bar"><br><br><br><br><br>
-    <h1><span>HTML CSS</span> design.</h1><br><br>
-    <h2>our services</h2><br>
-    <p>Providing html css design. with source code
-    </p>
-    <br>
-    <a href="#chatbot-field" id="contactMe">
-      <h3 onclick="contact()">Contact</h3>
-    </a>
-  </div>
-  <div id="chatbot-field" style="overflow: hidden;">
-    <img height="100%" width="100%" src="https://cdn.pixabay.com/photo/2018/01/17/20/22/analytics-3088958_960_720.jpg" >
-  </div>
- 
-   <style>
-       #chatbot-field{
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         align-items: center;
-         background: #000;
-       }
-        #chatbot-field p{
-          width: 20px;
-          background: none;
-          color: cyan;
-          display: flex;
-          justify-content: center;
+        #content {
+          margin-left: 16px;
+        }
+      }
+      @media only screen and (max-width: 1100px) {
+        .left-container h1 {
+          font-size: 40px;
+        }
+      }
+      @media only screen and (max-width: 1100px) {
+        /* flex direction change */
+        #mainContainer {
           flex-direction: column;
-          animation: changeCol 1s infinite linear;
-          border-radius: 100px;
-      
         }
-        #chatbot-field h5{
-          width: 20px;
-          background: none;
-          color: #2600ff;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          animation: changeCol 1s infinite linear;
-          border-radius: 100px;
-      
+        /*width increase ++ */
+        #box1 {
+          width: 98%;
         }
-        @keyframes changeCol {
-          0%{transform: scale(0.9);}
-          20%{transform: scale(1);}
-          40%{transform: scale(1.1);}
-          60%{transform: scale(0.8);}
-          80%{transform: scale(1.3);}
-          100%{transform: scale(0.7);}
-          
+        #box2 {
+          width: 98%;
         }
-
-   </style>
-  </div>
-    <!--for contact us trigger-->
-    <div id="contact-us"><br>
-      <p>[ Call me : 8207529736 ]</p>
-      <p>[ Email me : mpcfanda@gmail.com ]</p><br>
-      <p id="cut" onclick="cut()"></p>
+        h1 {
+          font-size: 40px;
+        }
+        #feedbackArea {
+          width: 78%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- top bar -->
+    <div class="topBar">
+      <!--Logo pic-->
+      <div class="logoPic"><img src="unnamed.png" alt="logoPic" /></div>
+      <p>Mpcwholeworld</p>
+      <div class="topRightMenu">
+        <!-- dark  mode -->
+        <div id="darkMode"><div onclick="toggleDark()" id="toggler"></div></div>
+      </div>
     </div>
-    <!--user chat output-->
-    <div id="user-chat"><br>
-      <form action="my_user_data.php" method="POST">
-        <input type="text" placeholder="Name...." name="viewerName"><br><br>
-        <input type="email" placeholder="Email..." name="viewerEmail"><br><br>
-        <textarea placeholder="Feedback please..." cols="20" rows="5" name="viewerMassages"></textarea><br><br>
-        <input type="submit" value="Submit" style="text-align: center;" id="button1">
-
-      </form>
-      <p id="cut-inside-chat" onclick="cut()"></p>
-    </div>
-
-  </div>
-  <div id="chatbot-input" onclick="openUserChat()">
-    <input type="text" placeholder="Talk to me..." id="input_for-chat">
-  </div><br><br><br><br>
-    <!--middle code-->
-     <div id="containerForMiddle">
-          <a href="contentslider.html">
-               <div id="blog">
-                    <div id="img">
-                              <img src="contentslider.png" alt="Preview Pic">
-                    </div>
-                    <div id="description">
-                         <h2>How to make content slider with button Using html css and js (easy way).</h2>
-                         <p>Date:19 nov 2020</p>
-                    </div>
-                    </div>
-                    </a>
-         <a href="PercentageCalculator.html">
-               <div id="blog">
-                    <div id="img">
-                              <img src="percentage.png" alt="Preview Pic">
-                    </div>
-                    <div id="description">
-                         <h2>How to make Percentage Calculator Using html css and js (easy way).</h2>
-                         <p>Date:27 oct 2020</p>
-                    </div>
-                    </div>
-                    </a>
-                    <a href="sideBarTutorial.html">
-                    <div id="blog">
-                              <div id="img">
-                                        <img src="SideBar.png" alt="Preview Pic">
-                              </div>
-                              <div id="description">
-                                   <h2>How to make Awesome Side Bar menu using HTML,CSS and js (Easy Way)?</h2>
-                                   <p>Date:26 oct 2020</p>
-                              </div>
-                              </div>
-                                  </a>
-                                  <a href="TechWebLoader.html">
-                    <div id="blog">
-                              
-                              <div id="img">
-                                        <img src="hud-3149462_1280.png " alt="Preview Pic">
-                              </div>
-                              <div id="description">
-                                   <h2>How to make Tech Website Loader using Html css?</h2>
-                                   <p>Date:25 oct 2020</p>
-                              </div>
-                              </div>
-                            </a>
-                            <a href=" DrivingAgeCheckerUsing-Html-css-js.html ">
-                    <div id="blog">
-                             
-                              <div id="img">
-                                        <img src="DrivingAge.png" alt="Preview Pic">
-                              </div>
-                              <div id="description">
-                                   <h2>How to make Driving Age Checker Using html css and javascript (easy way).</h2>
-                                   <p>Date:24 oct 2020</p>
-                              </div>
-                              </div>
-                                </a>
-                               <a href="how-to-make-quiz-app.html">
-                    <div id="blog">
-                              
-                              <div id="img">
-                                        <img src="quiz.png" alt="Preview Pic">
-                              </div>
-                              <div id="description">
-                                   <h2>How to make Quiz game Using html css and javascript (easy way)</h2>
-                                   <p>Date:23 oct 2020</p>
-                              </div>
-                              </div>
-                                   </a>
-                                   <a href="login-or-sign-up-page-toturial.html ">
-                    <div id="blog">
-                             
-                              <div id="img">
-                                        <img src="login.png" alt="Preview Pic">
-                              </div>
-                              <div id="description">
-                                   <h2>How to make Login and Sign Up page Using html css and javascript (easy way).</h2>
-                                   <p>Date:22 oct 2020</p>
-                              </div>
-                              </div>
-                              </a>
-                              <a href="imgsliderToturial.html">
-                    <div id="blog">
-                    
-                    <div id="img">
-                              <img src="imgslider.png" alt="Preview Pic">
-                    </div>
-                    <div id="description">
-                         <h2>How to make image slider using HTML, Css And javascript?</h2>
-                         <p>Date:21 oct 2020</p>
-                    </div>
-                    </div>
-                       </a>
-                       <a href="templet.html">
-                    <div id="blog">
-                              
-                              <div id="img">
-                                        <img src="ResponsiveNevBarThumbnail.jpg" alt="Preview Pic">
-                              </div>
-                              <div id="description">
-                                   <h2>How to make Nev Bar or Side bar using HTML And CSS?</h2>
-                                   <p>Date:20 oct 2020</p>
-                              </div>
-                    </div>
-                   </a>
-                    </div>
-                    <button onclick="left()" id="left"></button>
-                    <button style="float:right" onclick="right()" id="right"></button>
-          <div id="buttonCon">
+    <div id="mainContainer">
+      <div id="box1">
+        <div class="left-container">
+          <h1>Learn <span>Programming </span> With <span>Programmer</span></h1>
+          <p>
+            Hi, this is made for programmers and developers.which students who
+            wants to learn programming and become a developer.
+          </p>
+          <div onclick="menu()" id="menu">Menu</div>
+        </div>
+      </div>
+      <div id="box2">
+        <!-- menu structure -->
+        <div id="containerForMenu">
+          <!-- background design -->
+          <div class="boxes" id="backgroundArea">
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
+            <p>01</p>
           </div>
-          <script>
-                    function left(){
-                              var x = document.getElementById("containerForMiddle");
-                              x.scrollBy(300,0);
-                    }
-                    function right(){
-                              var x = document.getElementById("containerForMiddle");
-                              x.scrollBy(-300,0);
-                    }
-          </script>
-    <!---end-->
-   
-    
-  <div id="TopBar">
-    <img src="./hello_manohar.png" alt="favicon icon" id="logo">
-    <p id="mpc-font-logo">MPC Whole World</p>
-    <div class="container-of-all-item">
-      <a href="index.html"><button class="dropbtn"><i style="box-shadow:none;" class="fa fa-home" aria-hidden="true"></i></button></a>
-      </div>
-      </div>
-    </div>
-  </div>
-  <!--footer for this index-->
-  <footer>
-    <div class="owner">
-      <h2 style = "text-align:center; color:#dddd; margin-top:60px;">Owner & Developer</h2>
-     <h3 style = "text-align:center; color:#dddd;">Manohar Anand</h3>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="contentslider.html"
+              ><div id="imageContainer">
+                <img src="contentslider.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make content slider with button Using html css and js
+                  (easy way).
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="PercentageCalculator.html"
+              ><div id="imageContainer">
+                <img src="percentage.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make Percentage Calculator Using html css and js (easy
+                  way).
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="sideBarTutorial.html"
+              ><div id="imageContainer">
+                <img src="SideBar.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make Awesome Side Bar menu using HTML,CSS and js (Easy
+                  Way)?
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="TechWebLoader.html"
+              ><div id="imageContainer">
+                <img src="hud-3149462_1280.png " alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>How to make Tech Website Loader using Html css?</h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href=" DrivingAgeCheckerUsing-Html-css-js.html "
+              ><div id="imageContainer">
+                <img src="DrivingAge.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make Driving Age Checker Using html css and javascript
+                  (easy way).
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="how-to-make-quiz-app.html"
+              ><div id="imageContainer">
+                <img src="quiz.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make Quiz game Using html css and javascript (easy
+                  way).
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="login-or-sign-up-page-toturial.html "
+              ><div id="imageContainer">
+                <img src="login.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make Login and Sign Up page Using html css and
+                  javascript (easy way).
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="imgsliderToturial.html"
+              ><div id="imageContainer">
+                <img src="imgslider.png" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>
+                  How to make image slider using HTML, Css And javascript?
+                </h1>
+              </div></a
+            >
+          </div>
+          <!-- edit title and img name form hare  -->
+          <div class="boxes">
+            <a id="content" href="templet.html"
+              ><div id="imageContainer">
+                <img src="ResponsiveNevBarThumbnail.jpg" alt="Preview Pic" />
+              </div>
+              <div id="titleContainer">
+                <h1>How to make Nev Bar or Side bar using HTML And CSS?</h1>
+              </div></a
+            >
+          </div>
 
-    </div>
-    <div class="follow">
-      <h2 style = "text-align:center; color:#dddd; margin-top:30px;">Follow Me</h2><br>
-      <div class="all-follow-links">
-        <a href="https://www.facebook.com/manohar.anamd"><i class="fab fa-facebook-square fa-2x"></i></a>
-        <a href="https://twitter.com/ManoharAnand20"><i class="fab fa-twitter-square fa-2x"></i></a>
-        <a href="https://www.youtube.com/channel/UC7MDn7ukjwk8ZScoBpkR-Dg?view_as=subscriber"><i
-            class="fab fa-youtube-square fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/charming-programmer-4177701b6/"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+          <!-- feedback Area -->
+          <div id="feedbackArea">
+            <form action="#" id="man">
+              <input type="text" placeholder="Name...." />
+              <input type="text" placeholder="Email...." />
+              <textarea
+                name="feedbackPlease"
+                id="feedbackPlease"
+                cols="20"
+                rows="7"
+                placeholder="Feedback...."
+              ></textarea>
+              <input type="submit" value="send" />
+              <p id="cut" onclick="cut()"></p>
+            </form>
+          </div>
+        </div>
+        <!-- controller -->
+        <div id="controller">
+          <div id="pre" onclick="pre()"><</div>
+          <div id="feedback" onclick="feedback()">
+            <p id="feedbackText">feedback</p>
+          </div>
+          <div id="next" onclick="next()">></div>
+        </div>
+        <!-- policy and important facts  -->
+        <div id="agreement">
+          <a href="AboutUs.html"><button>about</button></a>
+           <a href="#"><button onclick="contact()">contact</button></a>
+            <a href="Terms-and-condition.html"><button>terms & conditions</button></a>
+            <a href="privacy-policy.html"><button>privacy policy</button></a>
+            <a href="sitemap.xml"><button>sitemap</button></a>
+        </div>
       </div>
     </div>
-    <div class="about"><br><br>
-      <form action="my_user_data.php" method="GET">
-        <input type="email" placeholder="Email..." name="viewerEmail"><br><br>
-        <input type="submit" value="SUBSCRIBE" style="text-align: center;" id="button1">
-      </form><br><br>
-      <a href="AboutUs.html">
-        <h3>About us</h3>
-      </a>
-      <a href="privacy-policy.html">
-        <h3>Privacy Policy</h3>
-      </a>
-      <a href="Terms-and-condition.html">
-        <h3>Terms & condition</h3>
-      </a>
-      <a href="Disclaimer.html">
-        <h3>Disclaimer</h3>
-      </a>
-       <a href="sitemap.xml">
-        <h3>Sitemap</h3>
-      </a>
+    <div id="katraNews">
+      <p>Wanna Access KatraNews.com</p><button>No</button><a href="katranews.com"><button>Yes</button></a>
     </div>
-  </footer>
-  <script>
-      // script for preloader
-function preloader() {
-    document.getElementById('containerForPreloader').style.display = "none";
-}
-  </script>
-</body>
+    <style>
+      #katraNews{
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background: #0f1111;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+      }
+      #katraNews p{
+        color: white;
+        font-weight: bold;
+      }
+      #katraNews button{
+        padding: 10px 20px ;
+        border-radius: 10px;
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 10px 1px black;
+        color: white;
+      }
+    </style>
+    <script>
+      // script for dark mode
+      function toggleDark() {
+        var toggler = document.getElementById("toggler");
+        toggler.classList.toggle("darkWhiteToggler");
+        var body = document.querySelector("*");
+        body.classList.toggle("changeColor");
+        var topBar = document.querySelector(".topBar");
+        topBar.classList.toggle("changeColor");
+      }
+      //auto dark mode push
+      // setTimeout(() => {
+      //           document.getElementById("toggler").style.float = "right";
+      //           document.querySelector("*").style.backgroundColor = "#1a1e21";
+      //           document.querySelector("*").style.color = "#ffffffc4";
+      //           document.querySelector(".topBar").style.backgroundColor = "#1a1e21";
+      // }, 5000);
+      // setTimeout(() => {
+      //           document.getElementById("toggler").style.float = "";
+      //           document.querySelector("*").style.backgroundColor = "";
+      //           document.querySelector("*").style.color = "";
+      //           document.querySelector(".topBar").style.backgroundColor = "";
+      // }, 10000);
+      //for previous
+      function pre() {
+        document.getElementById("containerForMenu").scrollBy(-300, 0);
+      }
+      //for next
+      function next() {
+        document.getElementById("containerForMenu").scrollBy(300, 0);
+      }
+      //for them scroll
 
+      setInterval(() => {
+        document.getElementById("backgroundArea").innerHTML =
+          "<p>WELCOME TO</p>";
+      }, 1000);
+      setInterval(() => {
+        document.getElementById("backgroundArea").innerHTML =
+          "<p>MPCWHOLEWORLD.COM</p>";
+      }, 2000);
+      //for menu
+      function menu() {
+        document.querySelector("*").scrollBy(0, 2000);
+        setTimeout(() => {
+          document.getElementById("containerForMenu").scrollBy(2000, 0);
+        }, 1000);
+        setTimeout(() => {
+          document.getElementById("containerForMenu").scrollBy(-2000, 0);
+        }, 3000);
+      }
+      //for feedback area
+
+      function feedback() {
+        var feedbackArea = document.getElementById("feedbackArea");
+        feedbackArea.style.transform = "scale(1)";
+      }
+
+      function cut() {
+        document.getElementById("feedbackArea").style.transform = "scale(0)";
+      }
+      newElement = document.createElement("p");
+      //for contact us page
+      function contact(){
+      alert("Email => mpcwholeworld@gmail.com");
+      }
+    </script>
+  </body>
 </html>
