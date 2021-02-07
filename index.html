@@ -1250,6 +1250,61 @@ hello_manohar.png " alt="logoPic" /></div>
         </div>
       </div>
     </div>
+      <!-- notification for katra news.com -->
+  <div id="notification">
+    <article>
+      You Wanna Access Katra News.com           
+    </article>
+    <button style="background-color: rgba(255, 0, 0, 0.713);" onclick="no()">No</button>
+    <a href="katranews.html"><button style="background-color: green;">Yes</button></a>
+  </div>
+  <style>
+    #notification{
+      height: 50px;
+      width: 100%;
+      background: #4c5354;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      transform: scale(0);
+      transform-origin:bottom ;
+      transition: .2s;
+    }
+    article{
+      color: white;
+      font-weight: bold;
+      background: none;
+      margin-left: 5px;
+      text-shadow: 0  2px 1px black;
+
+    }
+    #notification button{
+      padding: 10px 30px;
+      border: none;
+      outline: none;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: white;
+      box-shadow: 0 0 10px 1px #0000007e;
+      border-radius: 3px;
+    }
+    #notification a{
+    background: none;
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      document.getElementById("notification").style.transform = "scale(1)"
+    }, 1000);
+
+function no(){
+  document.getElementById("notification").style.transform = "scale(0)"
+}
+  
+  </script>
+
    
     <script>
       // script for dark mode
@@ -1319,5 +1374,6 @@ hello_manohar.png " alt="logoPic" /></div>
           "<p>MPCWHOLEWORLD.COM</p>";
       }, 3000);
     </script>
+      
   </body>
 </html>
