@@ -216,37 +216,9 @@ function nileshStory(){
          //container for news Text
          var newsTextContainer = document.querySelector("#newsTextContainer")
          //Add img in new field of page 1
-          imgContainer.innerHTML = document.querySelector(". horrerhouse").innerHTML; //edit img id name in this line
+          imgContainer.innerHTML = document.querySelector(".horrerhouse").innerHTML; //edit img id name in this line
          //Add text in news field of page 1
          newsTextContainer.innerHTML =  " अमित को horrer जगह पर जाने का शौक था वे इस सब जगह पर जाकर वीडियोस इकट्ठा करता था और इसे अपने यूट्यूब चैनल पर पोस्ट करता था अमित आज भी एक नई और भूतिया जगह पर जाने वाला है वह अपना सारा सामान इकट्ठा कर ही रहा था कि उसे एक फोन आया अमित भूतिया ख्यालों में डूबा था फोन की आवाज सुनकर डर गया पर फोन पिकअप करने पर पता चला कि दोस्त का फोन है जो तूने कहा है अमित वीडियो शूट के लिए तैयार हो मैं कार लेकर आता हूं और किस जगह पर जाना है वह मैं बताऊंगा अमित ने कहा हां यार मैं तैयार हूं तू आजा फोन रखने की थोड़ी देर बाद उसको एक कार का हॉर्न सुनाई दिया उसे पता चल गया कि उसका दोस्त ही है उसने अपना सारा सामान लेकर बाहर गया और कार में बैठ गया और बोला बोल यार आज कहां चलना है दोस्त ने बोला जगह सरप्राइस है मैं वहां पहुंच कर बताऊंगा और ऐसा बोलकर म्यूजिक ऑन कर दिया कुछ घंटे बाद दोनों उस जगह पर पहुंचे जहां आज उसे वीडियो शूट करना था गाड़ी से बाहर निकलते ही अमित ने पूछा कितनी डरावनी जगह है जहां उसे वीडियो शूट करना था गाड़ी से बाहर निकल लेते ही अमित ने पूछा कितनी डरावनी जगह है उसके दोस्त ने बोला यहां मस्त वीडियो आएगी और ऐसा बोलकर वे लोग उस घर  मैं पहुंचे जिसमें काफी अंधेरा था अमित और उसके दोस्त ने मिलकर सब जगह कैमरा और माइक से तकिया अमित ने दोस्त से कहा सब कुछ चेकअप हो गया तो चलते हैं आप कार में दोनों जल्दी से कार में जाकर बैठ गए और मॉनिटर में घर के अंदर का व्यू देखने लगे वे लोग मॉनिटर में आज घर आए हुए थे कि अचानक एक कैमरा नीचे गिर जाता है अमित ने कहा क्या यार कैसे कैमरा लगाते हो जहां जाकर ठीक करो मैं नहीं आने वाला इस बार उसका दोस्त कुछ बोला नहीं और गाड़ी से बाहर निकलकर घर की ओर चल गया थोड़ी देर बाद कैमरा फिर से चलने लगा उसका दोस्त भी वापस आ गया था दोनों  फिर से मॉनिटर को देखने लगे देखते-देखते जो देखा वह देखकर अमित के सर से पसीना टपक में लगा क्योंकि इसके उसने जो मॉनिटर में देखा वह कोई और नहीं था बल्कि उसका दोस्त था  तो उसके साथ जो कार में बैठा था वह कौन था पीछे से एक डरावनी आवाज आई मेरा वीडियो बनाने आया था ना तू अमित ने पीछे मुड़कर देखा तो उसका दोस्त उसे देख कर मुस्कुरा रहा  हां अमित गाड़ी से निकल कर भागना शुरू किया मैं गाड़ी की  परवाह थी ना ही कैमरे की बस परिवार था तो सिर्फ जान की जान बचा का जैसे तैसे भागा और वापस हो रे वीडियो शूट करना तो क्या उसने चैनल ही बंद कर दिया";         // news provider picture 
-         document.querySelector(".NewsProviderPic").innerHTML = '<img src="yoManohar.jpg" alt="News Provider Pic">'
-         //news provider name
-         document.getElementById("newProviderName").innerHTML = "Manohar Anand ";
-         document.getElementById("newsProvider").innerHTML = "Author";
-         document.querySelector("#trendingMainPage").scrollTo(0,0);
-          document.querySelector("#politicsCategory").scrollBy(250,0);
-        }
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        //content add like //////////////////////////////////////////////////////////////////////////////////
-        //below function worked clicked
-        function RajeshOffice(){
-          //opening new page using below script
-         trendingMainPage.style.transform = "scale(1)";
-         ///top title edit
-         document.getElementById("topTitle").innerHTML = "कहानियॉं";
-         //get real title 
-         var RTitle = document.getElementById("RajeshOffice").innerHTML;//change title of content
-         //write inside of page 1 title field 
-         document.getElementById("page1FinalTitle").innerHTML = RTitle;
-         //container of img
-         var imgContainer = document.querySelector("#imgContainer");
-         //container for news Text
-         var newsTextContainer = document.querySelector("#newsTextContainer")
-         //Add img in new field of page 1
-          imgContainer.innerHTML = document.querySelector(".RajeshOffice").innerHTML; //edit img id name in this line
-         //Add text in news field of page 1
-         newsTextContainer.innerHTML =  "राजेश एक मल्टीनेशनल कम्पनी का मालिक है उसके पास अच्छा पैसा और घर है और उसकी लाईफ बोले तो सेटल है वो रोज सुबह दस बजे आॉफिस के लिए  निकलता है । और रात के दस बजे तक आॉफिस से घर वापस आ जाता  है । राजेश कि दिनचर्या ऐसी ही थी एक दिन उसने आपने पार्टनर से झगरा कर लिया । उस दिन से वह आकेले हि काम-काज देखता है जिससे   उसे घर आने मे देर हो जाता है झगरे के कुछ दिन बाद राजेश के आॉफिस में आजीब-आजीब आवाजें सुनाई देने लगी । राजेश ये सब आवाज सुनकर तंग आ गया था। और सोचा कि कुछ दिनों तक आॉफिस नहीं आते हैं ऐसा हि हुआ वो आॉफिस आब नही आ रहा था । घर से हि आपना काम कर रहा था एक रात आचानक वही आॉफिस वाली आवाज सुनायी देने लगी राजेश ने आपने नौकर को बुलाया तो नौकर से पुछा ये कैसी आवाजें हैं, नौकर ने कहा कौन सी आवाजे मुुुुझे तो कुछ सुनाई नहीं दे रहा। राजेश हैरान हो गया और बोला तुम जाआो आभी नौकर चला गया पर थोड़ी देर बाद थकान के मारे राजेश को कॉफी  पीने की इच्छा हुयी उसने नौकर को आवाज लगायी । नौकर तो आया पर वो पहले वाला नौकर नहीं था। नौकर ने कुछ नहीं बोला ।राजेश ने कहा जाकर मेरे लिए एक का कॉफी बनाआो। राजेश काम में व्यस्त था इसलीये नौकर का चेहरा नहीं देखा। थोड़ी देर बाद नौकर ने कॉफी बनाकर लाया और टेबल पर रख दिया। राजेश ने कॉफी की एक चुस्की ली और तभी उसके कान में एक आवाज सुनाई दी ,चीनी तो ठीक है न बॉस ये आवाज इतनी डरावनी थी कि उसका गला सुख गया और जब पलट कर देखा तो उसका वह आॉफिस पार्टनर था जिससे उसका झगरा हुआ था। पार्टनर तो था पर इन्सान के जैसा नहीं था बल्की उसके मुह पर घाव और खुन का  धब्बा लगा था। उसका ये चेहरा देखकर राजेश बेहोश हो गया । उस दिन से राजेश को उसका पार्टनर कैद करके रखा है और रोज कॉफी पिलाता है। दरसल उसका पार्टनर झगरे कि वजस से शुसाइड कर लिया था।";
-         // news provider picture 
          document.querySelector(".NewsProviderPic").innerHTML = '<img src="yoManohar.jpg" alt="News Provider Pic">'
          //news provider name
          document.getElementById("newProviderName").innerHTML = "Manohar Anand ";
