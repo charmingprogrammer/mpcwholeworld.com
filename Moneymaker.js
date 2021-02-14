@@ -1859,7 +1859,7 @@ function about() {
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1450);
+  document.querySelector("*").scrollTo(0, 1550);
 }
 
 //contact us page
@@ -1874,7 +1874,7 @@ function contact() {
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1450);
+  document.querySelector("*").scrollTo(0, 1550);
 }
 
 //privacy policy  page
@@ -1889,7 +1889,7 @@ function pp() {
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1450);
+  document.querySelector("*").scrollTo(0, 1550);
 }
 //terms and conditions page
 function tc() {
@@ -1903,7 +1903,7 @@ function tc() {
   document.getElementById("pp").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1450);
+  document.querySelector("*").scrollTo(0, 1550);
 }
 // how to use
 function howToUse() {
@@ -1940,4 +1940,4 @@ function sendPaytm() {
 function refreshBtnHider() {
   window.location = "MoneyMaker.html";
 }
-  
+
