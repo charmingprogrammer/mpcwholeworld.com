@@ -756,7 +756,7 @@ box-shadow:  0 0 10px 1px #0000006b;
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   #shortVideos {
     overflow-x: scroll;
   }
