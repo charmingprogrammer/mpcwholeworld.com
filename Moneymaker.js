@@ -120,7 +120,7 @@ function openWithdrawPage() {
   var x = document.getElementById("money").value;
   var y = document.getElementById("opt");
   y.innerHTML = x;
-  if (document.getElementById("money").value === 70 + "Points") {
+  if (document.getElementById("money").value === 500 + "Points") {
     document.getElementById("sendBtn").style.display = "block";
     document.getElementById("AlertWallet").style.display = "none";
   } else {
