@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -540,14 +540,13 @@
       Your Wallet
     </div>
     <div id="WithdrawBody">
-      <form onsubmit="dataSend()" id="WithdrawForm" action="moneyMakerDatabase.php" method="Post" accept-charset="utf-8">
-        <input type="text" name="name" placeholder="Name..." />
-        <input type="text" name="email" placeholder="Email..." />
-        <input type="number" name="PaytmNumber" placeholder="Paytm Number..." />
-        <option id="opt" value="100"></option>
+      <form  id="WithdrawForm" accept-charset="utf-8">
+        <option id="opt" value="100" style="color:gray; font-weight:bold;"></option>
         <br />
-        <input type="submit" value="Send Money" id="sendBtn" />
-        <p id="AlertWallet">Please Earn 500 Points</p>
+ <p style="color:white; text-align:center;"> If your point is 500 then Send you your <b>Name</b> and  <b>Paytm Mobile Number </b> and <b>Screenshot of Your Wallet page </b>on this WhatsApp.</p><br /><br />
+        <a onclick="dataSend()" style="text-decoration:none; color:white;"  href="https://wa.me/+918207529736/?text=Your Name:
+Paytm Mobile Number:
+Screenshot of Your wallet  page " id="sendBtn">Send Money</a><br /><br />
       </form>
     </div>
   </div>
@@ -555,4 +554,76 @@
 
   <!-- <audio src="music_zapsplat_exploring.mp3" id="bgMusicSource"></audio> -->
   <script src="Moneymaker.js" type="text/javascript" charset="utf-8"></script>
-  <script data-ad-client="ca-pub-4365651039511906" async src="https://pagead2.googlesyndication.com/pagead/
+  
+  
+<div class="adsPop" id="adsPop">
+<h2 onclick="closeAd()"></h2>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- moneyMakerAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="2044166066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- moneyMakerAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="2044166066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- moneyMakerAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="2044166066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<style type="text/css" media="all">
+.adsPop{
+  height: 100vh;
+  width: 100%;
+  background: black;
+  position:fixed;
+  top: 0;
+  z-index: 1283;
+  
+}
+.adsPop h2::before{
+  content: "\2715";
+}
+.adsPop h2{
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  z-index: 14569964578;
+  z-index:283848 ;
+  
+}
+</style>
+<script type="text/javascript" charset="utf-8">
+function closeAd() {
+  document.getElementById("adsPop").style.transform = 'scale(0)';
+}
+
+setInterval(function() {
+document.getElementById("adsPop").style.transform = 'scale(1)';
+},10000)
+</script>
+</body>
