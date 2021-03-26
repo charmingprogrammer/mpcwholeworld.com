@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Sans-Serif;
-  background: #111414;
   cursor: default;
   scroll-behavior: smooth;
 
@@ -25,29 +24,20 @@
   background: #111414;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: fixed;
   top: 0;
-  box-shadow: 0 0 10px 1px black;
 
 }
 #container-for-text {
   width: 70%;
   height: 50px;
   background: #111414;
-  color: #5d656b;
-  margin-left: 10px;
-}
-#container-for-text span {
-  background: #111414;
-  font-size: 20px;
-  font-weight: bold;
   color: white;
-}
-#container-for-text a {
-  color: #989c9e;
-  text-decoration: none;
-  outline: none;
-  font-size: 15px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 
 #container-for-money {
@@ -131,14 +121,14 @@
 .adBox {
   height: 300px;
   width: 300px;
-  box-shadow: 0 0 5px 1px #000000e3;
+  border: 1px solid black;
   margin-top: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #c9c9c9;
+  color: black;
   transition: 0.5s;
 }
 .adBox p {
@@ -211,18 +201,18 @@
   transform-origin: bottom;
   transition: 0.5s;
   z-index: 12123;
+  background: white;
 }
 #Laval1Top {
   height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
-  background: #111414;
-  color: #9b9b9b;
+  background:black;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 10px 1px black;
   z-index: 112258;
 }
 #Laval1Top h1 {
@@ -253,18 +243,18 @@
   transform-origin: bottom;
   transition: 0.5s;
   z-index: 12123;
+background: white;
 }
 #Laval2Top {
   height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
-  background: #111414;
-  color: #9b9b9b;
+  background: black;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 10px 1px black;
   z-index: 112258;
 }
 #Laval2Top h1 {
@@ -295,18 +285,18 @@
   transform-origin: bottom;
   transition: 0.5s;
   z-index: 13133;
+background: white;
 }
 #Laval3Top {
   height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
-  background: #111414;
-  color: #9b9b9b;
+  background: black;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 10px 1px black;
   z-index: 11358;
 }
 #Laval3Top h1 {
@@ -338,18 +328,18 @@
   transform-origin: bottom;
   transition: 0.5s;
   z-index: 1414;
+background: white;
 }
 #Laval4Top {
   height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
-  background: #111414;
-  color: #9b9b9b;
+  background: black;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 10px 1px black;
   z-index: 11458;
 }
 #Laval4Top h1 {
@@ -380,19 +370,19 @@
   transform-origin: bottom;
   transition: 0.5s;
   z-index: 1515;
+background: white;
 }
 #Laval5Top {
   height: 50px;
   width: 100%;
   position: fixed;
   top: 0;
-  background: #111515;
-  color: #9b9b9b;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 0 10px 1px black;
   z-index: 11558;
+background: black;
 }
 #Laval5Top h1 {
   height: 50px;
@@ -425,7 +415,6 @@
   height: 300px;
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 1px #000000c0;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -436,6 +425,7 @@
   overflow: hidden;
   color: #a2a2a2;
   transition: 0.5s;
+  border: 1px solid  black;
 }
 .task:hover {
   background: #161d1f9d;
@@ -680,7 +670,6 @@ footer {
   height: auto;
   width: 100%;
   background: none;
-  box-shadow: 0 0 10px 1px black;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -689,7 +678,7 @@ footer {
 .footerBox {
   height: 250px;
   width: 300px;
-  box-shadow: 0 0 10px 1px black;
+  border: 1px solid  black;
   border-radius: 10px;
   margin-top: 20px;
   display: flex;
@@ -714,7 +703,7 @@ footer {
   text-align: center;
 }
 .footerBox h2:hover {
-  color: white;
+  color: black;
 }
 .footerBox p {
   background: none;
@@ -722,13 +711,11 @@ footer {
   text-align: center;
 }
 .footerBox p:hover {
-  color: white;
+  color: black;
 }
 #footerMainPage {
   height: 63%;
   width: 90%;
-  box-shadow: 0 0 10px 1px black;
-  background: #111414;
   position: fixed;
   top: 70px;
   left: 5%;
@@ -737,10 +724,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px#313538 solid;
+  border: 1px #313538 solid;
   transform: scale(0);
   transform-origin: bottom center;
   transition: 0.5s;
+  background: black;
 }
 #footerMainPage::before {
   content: "";
@@ -761,7 +749,7 @@ footer {
   transform: scale(1);
   display: grid;
   place-content: center;
-  color: #f9fcfd;
+  color:white;
 }
 #footerPageCloser:hover {
   /* box-shadow: 0 0 10px 1px black inset;
@@ -804,9 +792,9 @@ footer {
   font-size: 20px;
   font-variant: small-caps;
   padding: 10px 20px;
-  box-shadow: 0 0 10px 1px black;
   transition: 0.3s;
   border-radius: 4px;
+  background: black;
 }
 #AlertMassage button:hover {
   background: blue;
