@@ -167,4 +167,3 @@ function pauseVideo1() {
   document.getElementById("video1").pause();
   document.getElementById("play").style.transform = "scale(1)";
 }
-
