@@ -1851,7 +1851,7 @@ function footerPageCloser() {
 //about us page
 function about() {
   document.getElementById("footerMainPage").style.transform = "scale(1)";
-  document.getElementById("about").style.color = "white";
+  document.getElementById("about").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML = "About US";
   document.getElementById("contentInFooterPage").innerHTML =
     "Hi, Money Maker made by indian for help people for income. you earn real money direct in your paytm. you can earn 500Rs a day form this site. Earning is really easy You have to just click according to how to use instructions and money will be come in your paytm under 1 working hour. believe me its really easy Try it ones you come again and again promise ";
@@ -1860,13 +1860,13 @@ function about() {
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1550);
+  document.querySelector("*").scrollTo(0, 2150);
 }
 
 //contact us page
 function contact() {
   document.getElementById("footerMainPage").style.transform = "scale(1)";
-  document.getElementById("contact").style.color = "white";
+  document.getElementById("contact").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML = "Contact US";
   document.getElementById("contentInFooterPage").innerHTML =
     "Hi, <br> my name is Manohar Anand I am owner of money maker. you have any types of problem related to this site  ask me on this gmail address: <p>MoneyMakerHelp@gmail.com</p>";
@@ -1875,13 +1875,13 @@ function contact() {
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1550);
+  document.querySelector("*").scrollTo(0, 2150);
 }
 
 //privacy policy  page
 function pp() {
   document.getElementById("footerMainPage").style.transform = "scale(1)";
-  document.getElementById("pp").style.color = "white";
+  document.getElementById("pp").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML = "Privacy Policy";
   document.getElementById("contentInFooterPage").innerHTML =
     "1.Your Data secure 100%.<br>2.Money Send under 3hours after Request.<br>3.Data used for sending Updates.<br>4.100Points = 1Rs.<br>5.Lowest withdraw Amount 500Points = 5Rs.";
@@ -1890,12 +1890,12 @@ function pp() {
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1550);
+  document.querySelector("*").scrollTo(0, 2150);
 }
 //terms and conditions page
 function tc() {
   document.getElementById("footerMainPage").style.transform = "scale(1)";
-  document.getElementById("tc").style.color = "white";
+  document.getElementById("tc").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML = "Terms & Conditions";
   document.getElementById("contentInFooterPage").innerHTML =
     "1.If your point reach 500 then apply for payment.<br>2.Provided real name and email address.<br>3. Provide linked paytm Mobile number.<br>  4.If you Provided wrong Paytm number then I can't take your risk.<br>5.Don't Clear your browser Data.<br>6.Do work According to given tips in how to use section else i can't take risk for anything wrong.";
@@ -1904,13 +1904,13 @@ function tc() {
   document.getElementById("pp").style.color = "";
   document.getElementById("howToUse").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1550);
+  document.querySelector("*").scrollTo(0, 2150);
 }
 // how to use
 function howToUse() {
   document.getElementById("footerMainPage").style.transform = "scale(1)";
   document.getElementById("footerMainPage").style.overflow = "hidden";
-  document.getElementById("howToUse").style.color = "white";
+  document.getElementById("howToUse").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML = "How to use";
   document.getElementById("contentInFooterPage").innerHTML =
     "1.Click on Laval Area.<br>2.Click Task Area.<br>3.After Click Task Area Wait 10s.<br>  4.Back To Home.<br>5.Click Refresh button (most important)<br>6.Don't Click on next task before points increase.";
@@ -1919,26 +1919,26 @@ function howToUse() {
   document.getElementById("pp").style.color = "";
   document.getElementById("tc").style.color = "";
   document.getElementById("sendPaytm").style.color = "";
-  document.querySelector("*").scrollTo(0, 1250);
+  document.querySelector("*").scrollTo(0, 1990);
 }
 // how to send money in paytm
 function sendPaytm() {
   document.getElementById("footerMainPage").style.transform = "scale(1)";
   document.getElementById("footerMainPage").style.overflow = "hidden";
-  document.getElementById("sendPaytm").style.color = "white";
+  document.getElementById("sendPaytm").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML =
     "How to send money in paytm";
   document.getElementById("contentInFooterPage").innerHTML =
-    "1.Click on top right corner .<br>2.Add details.<br> 3.If your point is 500 then show send money button otherwise button hide .<br> 4.After sending your details. Review your request<br>5.Send money under 1hour in your paytm account.";
+    "1.Click on top right corner .<br>2.Take a screenshot<br> 3.Send This screenshot ,Your Name and Paytm registered Mobile Number on given WhatsApp. Using Send money button<br> 4.If your point is 500 then show send money button otherwise button hide . After sending your details on given WhatsApp Number.Review your request<br>5.Send money under 1hour in your paytm account.";
   document.getElementById("about").style.color = "";
   document.getElementById("contact").style.color = "";
   document.getElementById("pp").style.color = "";
   document.getElementById("tc").style.color = "";
   document.getElementById("howToUse").style.color = "";
-  document.querySelector("*").scrollTo(0, 1250);
+  document.querySelector("*").scrollTo(0, 2000);
 }
 // refresh button
 function refreshBtnHider() {
-  window.location = "MoneyMaker.html";
+  location.reload();
 }
 
