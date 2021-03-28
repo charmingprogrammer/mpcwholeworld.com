@@ -8,6 +8,10 @@
   scrollbar-width: 0;
   background-color: white;
 }
+iframe{
+ border-radius: 10px;
+}
+
 
 body::-webkit-scrollbar {
   display: none;
@@ -265,7 +269,7 @@ img {
   background: none;
   border-radius: 10px;
   margin-left: 1%;
-   box-shadow:  0 0 10px 1px #0000008c;
+  border:1px solid gray;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -402,7 +406,7 @@ img {
   background: black;
   border-radius: 10px;
   transform: scale(0.9);
- box-shadow:  0 0 10px 1px #00000080;
+  border:1px solid gray;
 
 }
 
