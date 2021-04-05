@@ -116,12 +116,12 @@ function tc() {
   scrollVertical.scrollTo(0, 1950)
 
 }
-//for site map page 
+//for job page 
 function sitemap() {
   document.querySelector(".agreement").style.transform = "scale(1)";
   document.getElementById("sitemap").style.color = "#1c39bd";
   document.getElementById('titleOfAgreementPage').innerHTML = "jobs";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Apply class 7th to 12th+  students for writing 200-400 words digitally on your topic nash";
+  document.getElementById('paragraphOfAgreementPage').innerHTML = "Apply class 7th to 12th+  students for writing 200-400 words digitally on your topic nash <a style="color:white;text-decoration:none;border-radius:4px;background:blue;padding:10px 20px;" href="https://wa.me/+918207529736/?text=Your Name(....) or Your Mobile Number(.....)">Apply Now</a>";
   scrollVertical.scrollTo(0, 1950)
 
 }
