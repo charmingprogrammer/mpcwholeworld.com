@@ -121,7 +121,7 @@ function sitemap() {
   document.querySelector(".agreement").style.transform = "scale(1)";
   document.getElementById("sitemap").style.color = "#1c39bd";
   document.getElementById('titleOfAgreementPage').innerHTML = "jobs";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Apply class 7th to 12th+  students for writing 200-400 words digitally on your topic nash. If You are interested Then WhatsApp Your Name And Mobile Number on this Number 👉👉8207529736.;
+  document.getElementById('paragraphOfAgreementPage').innerHTML = "Apply class 7th to 12th+  students for writing 200-400 words digitally on your topic nash. If You are interested Then WhatsApp Your Name And Mobile Number on this Number 👉👉8207529736.";
   
   scrollVertical.scrollTo(0, 1950)
 
