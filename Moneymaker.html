@@ -555,8 +555,9 @@ Screenshot of Your wallet  page " id="sendBtn">Send Money</a><br /><br />
   <script src="Moneymaker.js" type="text/javascript" charset="utf-8"></script>
   
   
+  
 <div class="adsPop" id="adsPop">
-<h2 onclick="closeAd()"></h2>
+<h2 onclick="closeAd()" id="closerPop"></h2>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- moneyMakerAd -->
 <ins class="adsbygoogle"
@@ -568,6 +569,30 @@ Screenshot of Your wallet  page " id="sendBtn">Send Money</a><br /><br />
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- moneyMakerAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="2044166066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- moneyMakerAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4365651039511906"
+     data-ad-slot="2044166066"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- moneyMakerAd -->
 <ins class="adsbygoogle"
@@ -601,6 +626,7 @@ Screenshot of Your wallet  page " id="sendBtn">Send Money</a><br /><br />
   position:fixed;
   top: 0;
   z-index: 1283;
+  overflow-y: scroll;
   
 }
 .adsPop h2::before{
@@ -614,9 +640,9 @@ Screenshot of Your wallet  page " id="sendBtn">Send Money</a><br /><br />
   z-index: 14569964578;
   z-index:283848 ;
   color: black;
-  box-shadow: 0 0 5px 1px black ;
  border-radius: 100px;
- transform: scale(0.7);
+ transform: scale(0);
+ background:white;
   
 }
 </style>
@@ -628,6 +654,15 @@ function closeAd() {
 setInterval(function() {
 document.getElementById("adsPop").style.transform = 'scale(1)';
 },60000)
+
+
+setInterval(function() {
+document.getElementById("closerPop").style.transform = 'scale(1)';
+},4000)
+
+setInterval(function() {
+document.getElementById("adsPop").style.transform = 'scale(0)';
+},8000)
 </script>
 
 </body>
