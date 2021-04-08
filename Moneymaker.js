@@ -1913,7 +1913,7 @@ function howToUse() {
   document.getElementById("howToUse").style.color = "blue";
   document.getElementById("titleInFooterPage").innerHTML = "How to use";
   document.getElementById("contentInFooterPage").innerHTML =
-    "1.Click on Laval Area.<br>2.Click Task Area.<br>3.After Click Task Area Wait 10s.<br>  4.Back To Home.<br>5.Click Refresh button (most important)<br>6.Don't Click on next task before points increase.";
+    "1.Click on Laval Area.<br>2.Click Task Area.<br>3.After Click Task Area click on any ad and wait till load.<br>  4.Back To Home.<br>5.Click Refresh button (most important)<br>6.Don't Click on next task before points increase.";
   document.getElementById("about").style.color = "";
   document.getElementById("contact").style.color = "";
   document.getElementById("pp").style.color = "";
