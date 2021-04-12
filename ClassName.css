@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+#sideOpener{
+  height: 70px;
+  width: 15px;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+  transition: .5s;
+  top: 45%;
+  position: fixed;
+background:#242625;
+  z-index: 123;
+}
+#sideOpener:hover{
+  transform: scale(1.3);
+}
+.SideNavigation{
+  height:100%;
+  width: 70%;
+  background:#242625;
+  position: fixed;
+  top: 0px;
+  left:-100% ;
+  transition: .5s;
+  box-shadow: 0 0 10px 1px black;
+  overflow-y: scroll;
+  z-index:12344 ;
+}
+.index{
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px black solid;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  position: sticky;
+  top: 0;
+  background: #242625;
+}
+.chapters{
+  height: 50px;
+  width: 100%;
+  background: #73b5de;
+  border-bottom: 1px solid black;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.title{
+  height: 70px;
+  width: 100%;
+  background: #73b5de;
+  position: sticky;
+  top: 0;
+  display: grid;
+  place-items: center;
+  
+}
+.title h1{
+  font-size: 20px;
+}
+.content{
+  height: 100%;
+  width: 100%;
+}
+.content h3{
+  margin-left: 20px;
+}
+.content p {
+  padding: 20px;
+}
+.visualContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+}
+b{
+  background:  #73b5de;
+  margin-top: 10px;
+  padding: 0px 10px;
+border-radius: 4px;
+color: white;
+}
+img{
+  height: 100%;
+  width: 100%;
+ border-radius: 20px;
+
+}
+.boxes{
+  height: 155px;
+  width: 300px;
+  border: 1px solid  black;
+margin-top: 20px;
+border-radius: 20px;
+display: grid;
+place-items: center;
+overflow: hidden;
+background-image: url("https://cdn.pixabay.com/photo/2019/07/13/10/49/music-4334557_1280.jpg");
+background-position: center;
+background-size: cover;
+}
+#play,#pause{
+  border: none;
+  background: teal;
+  padding: 10px 20px;
+ border-radius: 100px;
+ outline: none;
+ margin-left: 200px;
+}
+
+.textContent{
+  height: 100%;
+  width: 100%;
+ margin-top: 50px;
+}
+.items{
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+ border: 1px black solid;
+  display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ border-radius: 5px;
+margin-top: 20px;
+}
+.items h2{
+  margin-top: 20px;
+  color: teal;
+}
+footer{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+@media only screen and (max-width:600px) {
+.visualContainer{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ flex-direction: column;
+  
+}
+}
