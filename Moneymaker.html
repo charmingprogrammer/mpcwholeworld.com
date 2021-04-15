@@ -541,7 +541,8 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
   
   
 </div>
-<div class="adsPop">
+<div class="adsPop" id="adsPop">
+  <h2 id="closerPop" onclick="closeAd()"></h2>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- moneyMakerAd -->
 <ins class="adsbygoogle"
@@ -570,7 +571,7 @@ document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +
 .adsPop{
   height: 100vh;
   width: 100%;
-  background:white;
+  background:orange;
   position:fixed;
   top: 0;
   z-index: 1283;
