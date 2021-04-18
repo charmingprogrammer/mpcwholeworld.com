@@ -1,89 +1,42 @@
+
+
 <!DOCTYPE html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Get Job in just 30min</title>
+  <title></title>
+  
   <style type="text/css" media="all">
-   a{
-     display: grid;
-     place-items: center;
-     text-decoration: none;
-position: sticky;
-      top: 0;
-   }
-    button{
-      background: blue;
-      padding: 10px 20px;
-      color: white;
-      border: none;
-      outline: none;
-    }
-    .ad{
-      height: 100%;
+    #container {
+      height: 100vh;
       width: 100%;
-      border: 1px solid black;
+      background: gray;
     }
   </style>
-  
 </head>
 <body>
-  <a href="form.html"><button type="button">Apply Now</button></a>
-<div class="ad">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- OnImgAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4365651039511906"
-     data-ad-slot="3504296782"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- OnImgAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4365651039511906"
-     data-ad-slot="3504296782"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- OnImgAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4365651039511906"
-     data-ad-slot="3504296782"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- OnImgAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4365651039511906"
-     data-ad-slot="3504296782"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- OnImgAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4365651039511906"
-     data-ad-slot="3504296782"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+  <div id="container">
+    
+  </div>
+  <script type="text/javascript" charset="utf-8">
+window.google_ad_client = "4365651039511906";
+window.google_ad_slot = "3504296782";
+window.google_ad_width = 200;
+window.google_ad_height = 700;
+
+// container is where you want the ad to be inserted
+var container = document.getElementById('container');
+var w = document.write;
+document.write = function (content) {
+    container.innerHTML = content;
+    document.write = w;
+};
+
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+document.body.appendChild(script);
+
+  </script>
 </body>
+
