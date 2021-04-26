@@ -336,7 +336,7 @@ divElement10.className = "box";
 
 setInterval(function(){
   document.getElementById('ad').style.transform = 'scale(1)';
-},50000)
+},5000)
 
 function cut(){
 document.getElementById('ad').style.transform = 'scale(0)';
