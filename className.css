@@ -6,6 +6,18 @@
   scroll-behavior: smooth;
   
 }
+able {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background: #a6d5e5;
+}
 a{
   text-decoration: none;
 }
