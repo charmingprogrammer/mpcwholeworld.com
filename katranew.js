@@ -1,170 +1,132 @@
-//for education category
-function previous() {
-  const sliderContainer = document.querySelector(".categoryNo");
-  sliderContainer.scrollBy(-400, 0);
-}
-function next() {
-  const sliderContainer = document.querySelector(".categoryNo");
-  sliderContainer.scrollBy(400, 0);
-}
-///////////for entertainment  category
-function previousEnt() {
-  const sliderContainer = document.querySelector("#entertainmentCategory");
-  sliderContainer.scrollBy(-400, 0);
-}
-function nextEnt() {
-  const sliderContainer = document.querySelector("#entertainmentCategory");
-  sliderContainer.scrollBy(400, 0);
-}
-///////////for politics  category
-function previousPol() {
-  const sliderContainer = document.querySelector("#politicsCategory");
-  sliderContainer.scrollBy(-400, 0);
-}
-function nextPol() {
-  const sliderContainer = document.querySelector("#politicsCategory");
-  sliderContainer.scrollBy(400, 0);
-}
-const sliderVideoContainer = document.querySelector("#shortVideos");
-function videoPre() {
-  sliderVideoContainer.scrollBy(-300, 0);
-}
-function videoNex() {
-  sliderVideoContainer.scrollBy(300, 0);
-}
-const sliderTreContainer = document.querySelector("#trendingNew");
-function trePre() {
-  sliderTreContainer.scrollBy(-300, 0);
-}
+fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=d63726bfae044a8fa1386c6727aaad16')
+.then( (data) =>{
 
-function treNex() {
-  sliderTreContainer.scrollBy(300, 0);
-}
+     return data.json();
+})
 
-//for opening menu
-function Topics() {
-  document.getElementById("topicCon").style.transform = "scale(1)";
-  document.getElementById("Topics").style.boxShadow = "0 0 10px 1px black";
-}
-//for close this menu
-function topicCon() {
-  document.getElementById("topicCon").style.transform = "scale(0)";
-  document.getElementById("Topics").style.boxShadow = "none";
-}
-//for closing main page 
-function closeTrendingMainPage() {
-  trendingMainPage.style.transform = "scale(0)";
-}
-//scroll using menu button 
-var scrollVertical = document.querySelector("*");
-//for trending news 
-function trending() {
-  scrollVertical.scrollTo(00, 0);
-}
-//for short videos
-function shortVideo() {
-  scrollVertical.scrollTo(00, 409);
-}
-//for educational news
-function educational() {
-  scrollVertical.scrollTo(00, 970);
-}
-//for entertainment news
-function entertainment() {
-  scrollVertical.scrollTo(00, 1330);
-}
-//for Politics news
-function politics() {
-  scrollVertical.scrollTo(00, 1680);
-}
-//for agreement script
-//for about us page 
-function about() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById("about").style.color = "#1c39bd";
-  document.getElementById('titleOfAgreementPage').innerHTML = "About Us";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "katraNew.com is a local news based website that provide news inside of India(Bihar(Muzaffarpur(Katra village))).katra news.com provides these category news => Trending news,Short Video news,Educational news,Entertainment news,Politics news. katraNew.com serve real news.<br>owner and Developer Details:<br>Mr.Manohar Anand => owner and Developer<br> who is Manohar Anand?<br>Manohar Anand is a student of IIT-JEE and web-developer and self thought Software Engineer.<br>How Work katraNew.com?<br> our news provider team help me to research news and then write code and implement news on the site by Manohar Anand.<br>Release date => 00.00.00 <br>version => 1.0 <br> Dummy Version released = 07.02.2021";
-scrollVertical.scrollTo(0, 1950)
-  scrollVertical.scrollTo(0, 1950)
+.then ((convert) => {
+ //array0 content 
+ let array1 = convert.articles[0];
+document.getElementById('img1').src = array1.urlToImage;
 
-
-}
-///for contact us page
-function contact() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById("contact").style.color = "#1c39bd";
-  document.getElementById('titleOfAgreementPage').innerHTML = "Contact Us";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Office => India(Bihar(Muzaffarpur(Katra Village)))<br>Office Name => Developer World<br>Email => katraNewsContact@gmail.com(Normal)<br>Email =>katraNewsBusiness@gmail.com(Business)";
-  scrollVertical.scrollTo(0, 1950)
-
-}
-//for privacy and policy page
-function pp() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById("pp").style.color = "#1c39bd";
-  document.getElementById('titleOfAgreementPage').innerHTML = "Privacy Policy";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Your Data Used for only News serving.";
-  scrollVertical.scrollTo(0, 1950)
-
-}
-//for terms and conditions page 
-function tc() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById("tc").style.color = "#1c39bd";
-  document.getElementById('titleOfAgreementPage').innerHTML = "Terms and Conditions";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "News responsibility only for news provider Team.";
-  scrollVertical.scrollTo(0, 1950)
-
-}
-//for job map page 
-function sitemap() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById("sitemap").style.color = "#1c39bd";
-  document.getElementById('titleOfAgreementPage').innerHTML = "jobs";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Apply class 7th to 12th+  students for writing 200-400 words digitally on your topic nash. If You are interested Then WhatsApp Your Name And Mobile Number on this Number 👉👉8207529736.";
+ let title1 = array1.title;
+  document.getElementById('title1').innerHTML = title1;
   
-  scrollVertical.scrollTo(0, 1950)
+ let content1 = array1.content;
+document.getElementById('content1').innerHTML = content1;
 
-}
-//for close agreement page 
-function CAgreement() {
-  document.querySelector(".agreement").style.transform = "scale(0)";
-  document.getElementById("about").style.color = "";
-  document.getElementById("contact").style.color = "";
-  document.getElementById("pp").style.color = "";
-  document.getElementById("tc").style.color = "";
-  document.getElementById("sitemap").style.color = "";
-}
-//show privacy page
-function PPA() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById('titleOfAgreementPage').innerHTML = "Privacy Policy";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Add paragraph of Contact us page write your about page content inside of this script.";
-}
-//show Terms and Conditions  page
-function TCA() {
-  document.querySelector(".agreement").style.transform = "scale(1)";
-  document.getElementById('titleOfAgreementPage').innerHTML = "Terms and Conditions";
-  document.getElementById('paragraphOfAgreementPage').innerHTML = "Add paragraph of Contact us page write your about page content inside of this script.";
-}
-//for opening terms and policy accepter 
-setTimeout(function () {
-  document.getElementById("policyAccepted").style.transform = "scale(1)";
-}, 3000);
-setTimeout(function () {
-  document.getElementById("policyAccepted").style.transform = "scale(0)";
-}, 7000);
+document.getElementById('readMore1').href= array1.url;
+
+//array1 content 
+ let array2 = convert.articles[1];
+document.getElementById('img2').src = array2.urlToImage;
+
+ let title2 = array2.title;
+  document.getElementById('title2').innerHTML = title2;
+  
+ let content2 = array2.content;
+document.getElementById('content2').innerHTML = content2;
+
+document.getElementById('readMore2').href= array2.url;
+
+//array2 content 
+ let array3 = convert.articles[2];
+document.getElementById('img3').src = array3.urlToImage;
+
+ let title3 = array3.title;
+  document.getElementById('title3').innerHTML = title3;
+  
+ let content3 = array3.content;
+document.getElementById('content3').innerHTML = content3;
+
+document.getElementById('readMore3').href= array3.url;
+//array3 content 
+ let array4 = convert.articles[3];
+document.getElementById('img4').src = array4.urlToImage;
+
+ let title4 = array4.title;
+  document.getElementById('title4').innerHTML = title4;
+  
+ let content4 = array4.content;
+document.getElementById('content4').innerHTML = content4;
+
+document.getElementById('readMore4').href= array4.url;
+
+//array4 content 
+ let array5 = convert.articles[4];
+document.getElementById('img5').src = array5.urlToImage;
+
+ let title5 = array5.title;
+  document.getElementById('title5').innerHTML = title5;
+  
+ let content5 = array5.content;
+document.getElementById('content5').innerHTML = content5;
+
+document.getElementById('readMore5').href= array5.url;
 
 
-//play video1 
-function playVideo1() {
-  document.getElementById("pause").style.transform = "scale(1)";
-  document.getElementById("video1").play();
-  document.getElementById("play").style.transform = "scale(0)";
-}
-//pause video1 
-function pauseVideo1() {
-  document.getElementById("pause").style.transform = "scale(0)";
-  document.getElementById("video1").pause();
-  document.getElementById("play").style.transform = "scale(1)";
+//array5 content 
+ let array6 = convert.articles[5];
+document.getElementById('img6').src = array6.urlToImage;
+
+ let title6 = array6.title;
+  document.getElementById('title6').innerHTML = title6;
+  
+ let content6 = array6.content;
+document.getElementById('content6').innerHTML = content6;
+
+document.getElementById('readMore6').href= array6.url;
+
+//array6 content 
+ let array7 = convert.articles[6];
+document.getElementById('img7').src = array7.urlToImage;
+
+ let title7 = array7.title;
+  document.getElementById('title7').innerHTML = title7;
+  
+ let content7 = array7.content;
+document.getElementById('content7').innerHTML = content7;
+
+document.getElementById('readMore7').href= array7.url;
+
+//array7 content 
+ let array8 = convert.articles[7];
+document.getElementById('img8').src = array8.urlToImage;
+
+ let title8 = array8.title;
+  document.getElementById('title8').innerHTML = title8;
+  
+ let content8 = array8.content;
+document.getElementById('content8').innerHTML = content8;
+
+document.getElementById('readMore8').href= array8.url;
+//array8 content 
+ let array9 = convert.articles[8];
+document.getElementById('img9').src = array9.urlToImage;
+
+ let title9 = array9.title;
+  document.getElementById('title9').innerHTML = title9;
+  
+ let content9 = array9.content;
+document.getElementById('content9').innerHTML = content9;
+
+document.getElementById('readMore9').href= array9.url;
+//array9 content 
+ let array10 = convert.articles[9];
+document.getElementById('img10').src = array10.urlToImage;
+
+ let title10 = array10.title;
+  document.getElementById('title10').innerHTML = title10;
+  
+ let content10 = array10.content;
+document.getElementById('content10').innerHTML = content10;
+
+document.getElementById('readMore10').href= array10.url;
+
+});
+ 
+
+
+function loader() {
+     document.getElementById('loader').style.display = "none";
 }
