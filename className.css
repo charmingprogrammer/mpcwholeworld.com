@@ -3,15 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Sans-Serif;
-  scroll-behavior: smooth;
-  
 }
-able {
+
+table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-
 td, th {
   border: 2px solid #dddddd;
   text-align: left;
@@ -86,7 +84,7 @@ box-shadow: 0 0 5px 1px black;
 }
 .ContentContainer{
   height: 100%;
-  width: 100;
+  min-width: 100%;
   background: none;
   display: flex;
   justify-content: space-around;
@@ -95,14 +93,19 @@ box-shadow: 0 0 5px 1px black;
 }
 .box{
   height: 100%;
-  width: 350px;
+  width: 90%;
   margin-top: 20px;
   border-radius: 5px;
- box-shadow: -10px 1px green;
+ box-shadow: -5px 1px orange;
  border: 1px solid gray;
+ transition: .5s;
+
   
 }
+.box:hover{
+box-shadow:0 0 100px 1px rgb(0,0,0);
 
+}
 .box p{
   margin-left: 10px;
   margin-right: 10px;
@@ -111,25 +114,28 @@ box-shadow: 0 0 5px 1px black;
   background: none;
   padding: 10px;
 }
-
+.box:hover p{
+font-size: bolder;
+}
 .box h2{
   margin-left: 10px;
   margin-right: 10px;
   font-weight: lighter;
-  color: green;
+  color: orange;
   font-weight: 400;
   background: none;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 img{
   height: 100%;
   width: 100%;
  border-radius: 5px;
   
 }
-
-  #darkMode{
+#darkMode{
     height: 50px;
     width: 50px;
     background:#2c2c2c;
@@ -138,81 +144,24 @@ img{
     bottom:0px;
     right:0px;
 box-shadow: 0 0 5px 1px black;
+z-index: 1234;
   }
-  .darkMode{
+.darkMode{
 background:#2c2c2c;
 color:white;
-
   }
-  
-  footer{
+footer{
     height: 100%;
     background: none;
     width: 100%;
-   margin-top: px;
+   margin-top:30px;
    display: flex;
   flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
+   flex-direction: column;
   }
-  .Fbox{
-  height: 100%;
-  width: 350px;
-  margin-top: 20px;
-  border-radius: 5px;
-   display: grid;
- place-items: center;
- background: #e1e0e0;
-  }
-  .Fbox h2{
-font-weight: 400;
-color:white;
-background: black;
-width: 100%;
-text-align: center;
-padding: 10px 20px;
-  }
-.Fbox ol{
-  width: 100%;
-}
-  .Fbox ol li {
-    list-style-type: none;
-    border: 1px gray solid;
-    text-align: center;
-    padding: 10px 20px;
-  }
- 
-  .Fbox ol li a{
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-  }
-  .ad{
-    height: 100vh;
-    width: 100%;
-    background: black;
-    position: fixed;
-    top: 0;
-    z-index: 12345;
-    transform: scale(0);
-    transform-origin:top right;
-    transition: .5s;
-    display:grid;
-
-  }
-  
-  .ad p{
-    position: fixed;
-    top:0px;
-    right: 0px;
-    background: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 100px;
-    box-shadow: 0 0 10px 1px black inset;
-    font-size: 20;
-    font-weight: bold;
-  }
-  .ad p:before {
-    content: "\2715";
+  footer a {
+       padding: 10px 20px;
+       color: gray;
   }
